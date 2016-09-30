@@ -1,0 +1,238 @@
+/*.approach-panel{
+    background:#909090 url("../images/bg-fixed.jpg") no-repeat scroll center 0;
+}*/
+.approach-menu-panel{
+    background:#fff;
+    margin-bottom:30px;
+    &.fixed{
+        left:0;
+        right:0;
+        top:0;
+        z-index:2000;
+        @include box-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+    }
+}
+.approach-menu{
+    position:relative;
+    margin:0 -15px;
+    ul{}
+    li{
+        color:$grey-text-secondary;
+        font-size:13px;
+        float:left;
+        height:46px;
+        padding:17px 0 0;
+        margin:0 8px 0 0;
+        cursor:pointer;
+        &:hover{
+            color:$title-in-theme;
+        }
+    }
+    li.active{
+        color:$title-in-theme; 
+    }
+}
+.step-count{
+    width:40px;
+    height:40px;
+    text-align:center;
+    font-weight:500;
+    font-size:16px;
+    line-height:40px;
+    display: block;
+    float:left;
+    margin-right:10px;
+    background:$title-in-theme;
+    color:$territory-color;
+    position:absolute;
+    z-index:100;
+    top:100%;
+    left:-15px;
+}
+.img-approach-frontend{
+    background:#425b71;
+    display:none;
+    padding:50px 0 0;
+    .layout-container{
+        padding:0 3px;
+    }
+    img{
+        width:100%;
+        display: block;
+    }
+}
+.approach-launch-panel{
+    background:$primary-color;
+    position:relative;
+    padding:50px 0;
+    .layout-container{
+        position:static;
+    }
+    h4{
+        font-size:14px;
+        margin:0;
+    }
+}
+.approach-content{
+    text-align:center;
+    h4{
+        font-size:18px;
+        font-weight:500;
+        margin:50px 0 10px;
+        text-transform:uppercase;
+        color:#000;
+    }
+    p{
+        font-size:16px;
+        font-family:$font-family-base;
+        a{
+            font-weight:500;
+            text-decoration:underline;
+            &:hover{
+                color:#000;
+                text-decoration:none;
+            }
+        }
+    }
+}
+.launch{
+    background:$primary-color;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:0;
+    left:0;
+    right:0;
+    color:$title-in-theme;
+    font-weight:800;
+    font-size:60px;
+    @include transition(all 2s ease);
+    display:none;
+}
+.approach-launch-panel.launch-animation{
+    .launch{
+        opacity:0;
+    }
+}
+
+.approach-step-panel{
+    position:absolute;
+    top:0;
+    z-index:100;
+    margin-left:-80px;
+    height:60px;
+    width:60px;
+}
+.approach-step-panel.fixed{
+    position:fixed;
+    top:40px;
+    &:hover{
+    }
+}
+.approach-step {
+    background:#fff;
+    @include border-radius(50%);
+    @include box-shadow(0px 2px 0px 0px rgba(199,199,199,1) );
+    width:60px;
+    height:60px;
+    margin:10px 0 0 0;
+    align-items:center;
+    display:flex;
+    text-align: center;
+    justify-content:center;
+    position:absolute;
+    cursor:pointer;
+    @include transition(all 0.3s ease);
+    img{
+        @include transition(all 0.6s ease);
+        opacity:0;
+    }
+    span{
+        @include transition(all 0.6s ease);
+        color:#fff;
+        position:absolute;
+        bottom:-50px;
+        left:-15px;
+        right:-15px;
+        color:#fff;
+        font-size:14px;
+        white-space:nowrap;
+        opacity:0;
+    }
+} 
+ 
+.approach-step:nth-child(1){
+    top:1px;
+    z-index:100;
+}
+.approach-step:nth-child(2){
+    top:3px;
+    z-index:99;
+}
+.approach-step:nth-child(3){
+    top:5px;
+    z-index:98;
+}
+.approach-step:nth-child(4){
+    top:7px;
+    z-index:97;
+}
+.approach-step:nth-child(5){
+    top:9px;
+    z-index:96;
+}
+.approach-step:nth-child(6){
+    top:11px;
+    z-index:95;
+}
+.approach-step-panel{
+    &:hover, &.opened{
+        height:calc(100vh - 100px);
+        .approach-step{
+            @include box-shadow( none );
+            img, span{
+                opacity:1;
+            }
+            span{
+                bottom:-15px;
+                font-size:12px;
+            }
+            &.active{
+                @include animation(logoAnim 0.6s  both);
+                @include transform-origin(top center);
+            }
+        }
+        .approach-step:nth-child(1){
+            top:1px;
+        }
+        .approach-step:nth-child(2){
+            top:90px;
+        }
+        .approach-step:nth-child(3){
+            top:180px;
+        }
+        .approach-step:nth-child(4){
+            top:270px;
+        }
+        .approach-step:nth-child(5){
+            top:360px;
+        }
+        .approach-step:nth-child(6){
+            top:450px;
+        }
+    }
+}
+.approach-step.active{ 
+     z-index:101;
+    top:1px;
+    span, img{
+        opacity:1;
+    }
+    span{
+        bottom:-30px;
+    }
+}

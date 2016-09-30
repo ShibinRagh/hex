@@ -1,0 +1,7 @@
+#Primary Color - #9cc403
+
+
+#Secondary Color - #323232
+
+
+Custom Color    - #bec5a0

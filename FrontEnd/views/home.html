@@ -3,10 +3,30 @@
 <!--approach start-->
 <section class="approach">
     <div class="layout-container">
-        <h2>Great companies can come <br>from anywhere.</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-        <div class="great-company" ng-include=" 'views/homeGreatCompany.html' ">
-            
+        <h2>A good design makes your work half done.</h2>
+        <p>Every successful product has a great story scribed. It goes along with numerous patterns and procedures which make them a cluster of cavalcade itself.</p>
+        <div class="great-company">
+            <h3>Our Approach</h3>
+                <figure>
+                    <img src="images/home/development.gif" alt="Front-end Development">
+                    <figCaption>Development</figCaption>
+                </figure>
+                <figure>
+                    <img src="images/home/ui-design.gif" alt="UI Design">
+                    <figCaption>UI Design</figCaption>
+                </figure>
+                <figure>
+                    <img src="images/home/prototyping.gif" alt="Prototyping">
+                    <figCaption>Prototyping</figCaption>
+                </figure>
+                <figure>
+                    <img src="images/home/concept.gif" alt="Design Concept">
+                    <figCaption>Concept</figCaption>
+                </figure>
+                <figure>
+                    <img src="images/home/research.gif" alt="Design Research">
+                    <figCaption>Research</figCaption>
+                </figure>
         </div>
     </div>
 </section>
@@ -20,15 +40,15 @@
         <div class="work-with-us-panel layout-wrapper">
             <div class="layout-sm-6">
                 <div class="workwithus-carousel-wrap">
-                    <h3 class="title">Come work with us</h3>
-                    <div ng-controller="workWithUsCtrl as withUs" class="owl-work-withus">
+                    <h3 class="title">Why we’re superficial?</h3>
+                    <div ng-controller="workWithUsCtrl" class="owl-work-withus">
                          <div class="item">
-                             <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-                             <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
+                             <h4>Creativity that influenced millions to harvest and build their dreams.</h4>
+                             <p>Our works have been always experimental that depicted an unorthodox evolution in the UX/UI architecture.</p>
                          </div>
                          <div class="item">
-                             <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-                             <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
+                             <h4>Perfection that got refined ensuring the best workflow and zero patchup.</h4>
+                             <p>We believe in perfection and that’s the fundamental rule we pass to every team member who joins a project at Toobler.</p>
                          </div>
                     </div>
                 </div>
@@ -63,7 +83,7 @@
                         <span class="line"></span>
                         </div>
                     </div>
-                    <div class="block go-arrow layout-sm-6" ng-click="home.goMajorWorks()">
+                    <div class="block go-arrow layout-sm-6 hide-mobile" ng-click="home.goMajorWorks()">
                         <div class="item-center"> 
                             <i class="icon-down-arrow-metro"></i>
                             <span>major works</span>
@@ -91,7 +111,7 @@
         <!--major-works start-->
         <div class="major-works-panel layout-wrapper">
             <div class="owl-major-works" ng-controller="majorWorksCtrl as works">
-                <div ng-repeat="work in works.work | limitTo:4" ng-repeat-owl-carousel carousel-init="works.carouselInitializer" style="background:{{work.primaryColor}}" class="owl-bg">
+                <div ng-repeat="work in works.work | filter: {showHome: true} | limitTo:6 " ng-repeat-owl-carousel carousel-init="works.carouselInitializer" ng-style="{background:work.primaryColor}" class="owl-bg"> 
                     <div class="layout-sm-6 heightset-major-works">
                         <figure class="major-works-img">
                             <img ng-src="{{work.image.imageHome}}" alt="" class="img-middle">
@@ -101,8 +121,11 @@
                         <div class="major-works-box">
                             <div class="table-cell">
                                 <h2>{{work.name}}</h2>
-                                <p>{{work.description | limitTo:150}}</p>
-                                <a ng-href="#/casestudy/{{work.name}}" class="btn-major-works" style="color:{{work.primaryColor}}">View more</a>
+                                <p>{{work.description | limitTo:150}}...</p>
+                                <a ng-style="hoverStyle"  
+                                 ng-mouseover="works.changeColor(work, true)" 
+                                 ng-mouseleave="works.changeColor(work, false)" 
+                                 ng-href="#/casestudy/{{work.name}}" class="btn-major-works">CASESTUDY</a>
                             </div>
                         </div>
                     </div>
@@ -116,15 +139,15 @@
             <div class="layout-sm-6">
                 <a class="block more-works layout-xs-6" ng-href="#/work">
                     <span class="item-center">
-                        <img src="images/block-icons/ico-seemoreworks.png" alt="">
+                        <img src="images/block-icons/ico-seemoreworks.png" alt="UXDOTS more works">
                         <span class="block-text">see more works?</span>
                     </span>
                     
                 </a>
-                <a class="block work-with-us-link layout-xs-6" ng-href="#/work">
+                <a class="block work-with-us-link layout-xs-6" ng-href="#/approach">
                     <span class="item-center">
-                        <img src="images/block-icons/ico-work-with-us-link.png" alt="">
-                        <span class="block-text">work with us?</span>
+                        <img src="images/block-icons/ico-work-with-us-link.png" alt="UXDOTS approach">
+                        <span class="block-text">our work approach</span> 
                     </span>
                 </a>
             </div>
@@ -137,16 +160,16 @@
             <div class="meet-our-client-panel layout-wrapper">
                 <div class="layout-sm-6">
                     <div class="content-half-block meet-our-client-content"> 
-                        <h3 class="title">Meet our clients</h3>
-                        <h4>Lorem Ipsum is simply dummy text of the.</h4>
-                        <p>Bound by a passion for pragmatic problem-solving,  by a passion for pragmatic problem-solving we want to find simple solutions to complicated problems.</p>
+                        <h3 class="title">Meet our euphoric clients</h3>
+                        <h4>We usher businesses engineering requisites.</h4>
+                        <p>Rather than just assisting people to bringing out their concepts into life, we put even more efforts to prompt the best approachable solutions for their needs.</p>
                     </div>
                 </div>
                 <div class="layout-sm-6 block-wrap">
                     <div class="meet-our-client">
                         <ul> 
                             <li ng-repeat="client in homeClient.clientsList.slice(homeClient.start, homeClient.end)" ng-class="['team-'+$index]" class="angular-animate">
-                                 <img ng-src="{{client}}" alt="">
+                                 <img ng-src="{{client}}" alt="UXDOTS clients">
                             </li>
                         </ul>
                         <div class="block hide-mobile"></div>
@@ -176,9 +199,9 @@
                             <span class="line"></span>
                         </div>
                     </div>
-                    <a class="block about-team layout-sm-6">
+                    <a href="#/about" class="block about-team layout-sm-6 hide-mobile">
                         <span class="item-center">
-                            <img src="images/block-icons/ico-about.png" alt="">
+                            <img src="images/block-icons/ico-about.png" alt="About UXDOTS">
                             <span class="block-text">about the design team</span>
                         </span>
                     </a>
@@ -193,86 +216,93 @@
     
     <!--image-flip-panel start-->
     <section class="image-flip-panel layout-wrapper" img-flip ng-if="width > 780">
-        <div class="layer"></div>
         <div class="flip-container">
             <div class="img-flip img-flip-1-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front.jpg" alt="">
+                    <img src="images/toobler/01.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back.jpg" alt="">
+                    <img src="images/toobler/02.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
             <div class="img-flip img-flip-2-2 stamp ">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front3.jpg" alt="">
+                    <img src="images/toobler/03.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back3.jpg" alt="">
+                    <img src="images/toobler/04.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
             <div class="img-flip img-flip-2-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/05.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/06.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
            
             <div class="img-flip img-flip-1-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/07.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/08.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
             <div class="img-flip img-flip-1-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/09.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/10.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
             <div class="img-flip img-flip-1-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/11.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/12.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
             <div class="img-flip img-flip-2-2">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/04.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/03.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
              <div class="img-flip img-flip-1-1">
+                <div class="layer"></div>
                 <div class="card"> 
                   <div class="front"> 
-                    <img src="images/flip/front2.jpg" alt="">
+                    <img src="images/toobler/02.jpg" alt="UXDOTS work gallery">
                   </div> 
                   <div class="back">
-                    <img src="images/flip/back2.jpg" alt="">
+                    <img src="images/toobler/01.jpg" alt="UXDOTS work gallery">
                   </div> 
                 </div>
             </div>
@@ -283,31 +313,31 @@
     <!--layout-container start-->
     <div class="layout-container">
         <!--block-wrap start-->
-        <aside class="block-wrap">
+        <aside class="block-wrap hide-mobile">
             <div class="block deployed layout-sm-3">
                 <div class="item-center">
-                    <img src="images/block-icons/ico-deployed-projects.png" alt="">
+                    <img src="images/block-icons/ico-deployed-projects.png" alt="UXDOTS Deployed Projects">
                     <span class="block-text"><cite class="bold">200</cite>Deployed Projects</span>
                     
                 </div>
             </div>
             <div class="block music layout-sm-3">
                 <div class="item-center">
-                    <img src="images/block-icons/ico-music.png" alt="">
+                    <img src="images/block-icons/ico-music.png" alt="UXDOTS Plalist">
                     <span class="block-text"><cite class="bold">500</cite>Music in our playlist</span>
                 </div>
             </div>
             <div class="block cup layout-sm-3">
                 <div class="item-center">
-                    <img src="images/block-icons/ico-cup.png" alt="">
+                    <img src="images/block-icons/ico-cup.png" alt="UXDOTS cup of tea">
                     <span class="block-text"><cite class="bold">1000</cite>Cup of tea</span>
                 </div>
             </div>
         </aside>
         <!--block-wrap end-->
         
-         <!--hex-block start-->
-         <div class="hex-block layout-wrapper block-wrap">
+         <!--uxdots-block start-->
+         <div class="uxdots-block layout-wrapper block-wrap">
              <div class="layout-sm-6 stripe-wrap">
                 <div class="stripe">
                     <div class="deg left">
@@ -323,9 +353,9 @@
                         <span class="line"></span>
                     </div>
                 </div>
-                <a class="hex block layout-sm-6">
+                <a href="#/about" class="uxdots block layout-sm-6 hide-mobile">
                     <span class="item-center">
-                        <h2>HEX</h2>
+                        <h2>UXDOTS</h2>
                         <span class="block-text">Want you know more?</span>
                     </span>
                 </a>
@@ -358,14 +388,14 @@
                     </div>
                 </div>
              </div>
-             <div class="layout-sm-6 hex-download-stuff">
-                 <h3 class="semi-bold">Free stuff download ?</h3>
-                 <h2 class="semi-bold">Every designer loves free stuff.</h2>
-                 <p> Here we bring together  monstrously delicious creative assets in the form of free stuff and resources for web, mobile, and everything in between! </p>
-                 <a href="#" class="download">Download free stuff</a>
+             <div class="layout-sm-6 uxdots-download-stuff hide-mobile"> 
+                 <h3 class="semi-bold">Break the rules!</h3>
+                 <h2 class="semi-bold">Don’t you love freaking out above?</h2>
+                 <p>We love experimenting and wandering along a new path no one has ever explored yet. What’s so special in doing the already dones?</p>
+                 <a href="javascript:void(0)" class="download">Need some help?</a>
              </div>
          </div>
-         <!--hex-block end--> 
+         <!--uxdots-block end--> 
         
     </div>
     <!--layout-container end-->
@@ -379,13 +409,13 @@
     <div class="layout-container">
         <h2 class="bold">WHAT OUR CLIENT SAYS</h2>
         <div class="owl-testimonial">
-            <div ng-repeat="testimo in testi.testimonials" ng-repeat-owl-carousel carousel-init="testi.carouselInitializer">
+            <div ng-repeat="testimo in testi.testimonials | filter: {testimonialShowHome: true} | limitTo:6" ng-repeat-owl-carousel carousel-init="testi.carouselInitializer">
                 <div class="testimonial">
-                    <h3 class="semi-bold">{{testimo.name}}</h3>
-                    <span>{{testimo.project}}</span>
+                    <h3 class="semi-bold">{{testimo.client}}</h3>
+                    <span>{{testimo.clientProfession}}</span>
                     <p>{{testimo.testimonial}}</p>
                     <figure>
-                        <img ng-src="{{testimo.image}}" alt="">
+                        <img ng-src="{{testimo.clientImage}}" alt="UXDOTS Testimonials">
                     </figure>
                 </div>
             </div>

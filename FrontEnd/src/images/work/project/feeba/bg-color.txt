@@ -1,0 +1,7 @@
+#Primary Color - #a4c22c
+
+
+#Secondary Color - #20232a
+
+
+Custom Color    - #0078b4

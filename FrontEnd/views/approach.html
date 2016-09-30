@@ -1,29 +1,29 @@
 <!--start approach-panel-->
 <section class="approach-panel layout-wrapper content-wrapper">
     <div class="layout-container">
-        <div class="approach-step-panel" ng-class="{'fixed': wOffset > bnrHeight}" ng-hide="step == 6">
+        <div class="approach-step-panel" ng-class="{'fixed': wOffset > bnrHeight, 'opened': stepClicked }" ng-hide="step == 6">
            <div class="approach-step active" ng-class="{'active': step == 1}" ng-click="approachScroll('stepResearch')">
-                <img src="images/ico-research.png" alt="" >
+                <img src="images/ico-research.png" alt="UXDOTS research" >
                 <span>RESEARCH</span>
             </div>
             <div class="approach-step" ng-class="{'active': step == 2 }" ng-click="approachScroll('stepUX')">
-                <img src="images/ico-ux-design.png" alt="">
+                <img src="images/ico-ux-design.png" alt=" UXDOTS design">
                 <span>UX DESIGN</span>
             </div>
             <div class="approach-step" ng-class="{'active': step == 3 }" ng-click="approachScroll('stepUI')">
-                <img src="images/ico-ui-design.png" alt="">
+                <img src="images/ico-ui-design.png" alt="UXDOTS UI design">
                 <span>UI DESIGN</span>
             </div>
             <div class="approach-step" ng-class="{'active': step == 4 }" ng-click="approachScroll('stepFrontEnd')">
-                <img src="images/ico-front-end.png" alt="">
+                <img src="images/ico-front-end.png" alt="UXDOTS front-end development">
                 <span>FRONT-END</span>
             </div>
             <div class="approach-step" ng-class="{'active': step == 5 }" ng-click="approachScroll('stepQA')">
-                <img src="images/ico-qa.png" alt="">
+                <img src="images/ico-qa.png" alt="UXDOTS quality analysis">
                 <span>QA</span>
             </div>
             <div class="approach-step" ng-class="{'active': step == 6 }" ng-click="approachScroll('stepLaunch')">
-                <img src="images/ico-launch.png" alt="">
+                <img src="images/ico-launch.png" alt="UXDOTS project launch">
                 <span>LAUNCH</span>
             </div>
         </div>
@@ -35,8 +35,8 @@
                 <aside class="layout-sm-6">
                     <div class="content-half-block approach-content-block">
                         <h3 class="title">Research &amp; Concept</h3>
-                        <h4>Understand user behavior, needs and perspectives</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150s.</p>
+                        <h4>Document user approach and the pivotal idea.</h4>
+                        <p>The fundamental and the inevitable parameter in the development of every making. People at UXDOTS put a notable duration in research and prompting new inputs to fortify the concept.</p>
                     </div>
                 </aside>
                 <div class="layout-sm-3 hide-mobile block-wrap">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="block discussion layout-xs-12">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-discussion.png" alt="">
+                            <img src="images/block-icons/ico-discussion.png" alt="UXDOTS Discussion">
                             <div class="block-text">DISCUSSION</div>
                         </div>
                     </div>
@@ -66,25 +66,25 @@
                 <div class="block layout-sm-3 hidden hide-mobile"></div>
                 <div class="block discussion layout-xs-6 hidden-sm">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-discussion.png" alt="">
+                        <img src="images/block-icons/ico-discussion.png" alt="UXDOTS disussion">
                         <div class="block-text">DISCUSSION</div>
                     </div>
                 </div>
                 <div class="block requirment layout-xs-6 layout-sm-3">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-requirment.png" alt="">
+                        <img src="images/block-icons/ico-requirment.png" alt="UXDOTS requirment">
                         <div class="block-text">REQUIRMENT</div>
                     </div>
                 </div>
                 <div class="block study layout-xs-6 layout-sm-3">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-study.png" alt="">
+                        <img src="images/block-icons/ico-study.png" alt="UXDOTS study">
                         <div class="block-text">STUDY</div>
                     </div>
                 </div>
                 <div class="block research layout-xs-6 layout-sm-3">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-research.png" alt="">
+                        <img src="images/block-icons/ico-research.png" alt="UXDOTS research">
                         <div class="block-text">RESEARCH</div>
                     </div>
                 </div>
@@ -94,22 +94,12 @@
     <!--end approach-research-panel-->
     
     <!--start approach-image-panel-->
-    <section class="approach-image-panel" approach-image-dir>
-        <div class="image-back">
-            <ul>
-                <li class="one"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-                <li class="four"></li>
-            </ul>
-        </div>
-        <div class="image-front">
-            <h2>"We Believe The Key To Crafting A Strong, Memorable Brand, Is Simplicity"</h2>
-            <ul class="">
-                <li class="one current"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-            </ul>
+    <section class="approach-image-panel" approach-image-dir ng-if="desktopScreen">
+        <div class="layout-container">
+            <figure class="app-img-one">
+                <img src="images/approach/approch-01.jpg" alt="UXDOTS approach">
+                <figCaption>"To understand how consumers really think and feel, it is vital to go beyond words."</figCaption>
+            </figure>
         </div>
     </section>
     <!--end approach-image-panel-->
@@ -122,8 +112,8 @@
                 <aside class="layout-sm-6">
                     <div class="content-half-block approach-content-block">
                         <h3 class="title">User Experience</h3>
-                        <h4>UX is at the the heart Of Everything We Do</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>The way it works and how it’s explored by users</h4>
+                        <p>UX is the heart of a design. It blueprints the outline and workflow of the entire application. An incredible user interaction happens only with a brilliant UX.</p>
                     </div>
                 </aside>
                 <div class="layout-sm-6 block-wrap">
@@ -144,25 +134,25 @@
                     </div>
                     <div class="block layout-xs-6 prototyping">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-prototyping.png" alt="">
+                            <img src="images/block-icons/ico-prototyping.png" alt="UXDOTS prototyping">
                             <div class="block-text">PROTOTYPING</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 architecture">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-architecture.png" alt="">
+                            <img src="images/block-icons/ico-architecture.png" alt="UXDOTS architecture">
                             <div class="block-text">ARCHITECTURE</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 journy">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-journy.png" alt="">
+                            <img src="images/block-icons/ico-journy.png" alt="UXDOTS user journy">
                             <div class="block-text">USER JOURNY</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 testing">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-testing.png" alt="">
+                            <img src="images/block-icons/ico-testing.png" alt="UXDOTS user testing"> 
                             <div class="block-text">USER TESTING</div>
                         </div>
                     </div>
@@ -173,22 +163,12 @@
     <!--end approach-ux-panel-->
     
     <!--start approach-image-panel-->
-    <section class="approach-image-panel" approach-image-dir>
-        <div class="image-back">
-            <ul>
-                <li class="one"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-                <li class="four"></li>
-            </ul>
-        </div>
-        <div class="image-front">
-            <h2>"We Believe The Key To Crafting A Strong, Memorable Brand, Is Simplicity"</h2>
-            <ul class="">
-                <li class="one current"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-            </ul>
+    <section class="approach-image-panel" approach-image-dir ng-if="desktopScreen">
+        <div class="layout-container">
+            <figure class="app-img-two">
+                <img src="images/approach/approch-02.jpg" alt="UXDOTS approach - When your work speaks for itself, don’t interrupt.">
+                <figCaption>"When your work speaks for itself, don’t interrupt."</figCaption>
+            </figure>
         </div>
     </section>
     <!--end approach-image-panel-->
@@ -201,8 +181,8 @@
                 <aside class="layout-sm-6 pull-right-sm">
                      <div class="content-half-block approach-content-block">
                         <h3 class="title">USER INTERFACE DESIGN</h3>
-                        <h4>Design attracts users before they even think about. </h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>A design portrays everything before you start it.</h4>
+                        <p>Being the iteration of an entire platform, priority to skin out a world class design in every creativity is a must-do for us. In short, a design is intended to address users in providing solutions.</p>
                     </div>
                 </aside>
                 <div class="layout-sm-6 block-wrap">
@@ -223,19 +203,19 @@
                     </div>
                     <div class="block layout-xs-6 interactivity">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-interactivity.png" alt="">
+                            <img src="images/block-icons/ico-interactivity.png" alt="UXDOTS interactivity">
                             <div class="block-text">INTERACTIVITY</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 layout">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-layout.png" alt="">
+                            <img src="images/block-icons/ico-layout.png" alt="UXDOTS layout design">
                             <div class="block-text">LAYOUT DESIGN</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 illustration">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-illustration.png" alt="">
+                            <img src="images/block-icons/ico-illustration.png" alt="UXDOTS illustration">
                             <div class="block-text">ILLUSTRATION</div>
                         </div>
                     </div>
@@ -260,22 +240,12 @@
     <!--end approach-ui-panel-->
     
     <!--start approach-image-panel-->
-    <section class="approach-image-panel" approach-image-dir>
-        <div class="image-back">
-            <ul>
-                <li class="one"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-                <li class="four"></li>
-            </ul>
-        </div>
-        <div class="image-front">
-            <h2>"We Believe The Key To Crafting A Strong, Memorable Brand, Is Simplicity"</h2>
-            <ul class="">
-                <li class="one current"></li>
-                <li class="two"></li>
-                <li class="three"></li>
-            </ul>
+    <section class="approach-image-panel" approach-image-dir ng-if="desktopScreen">
+        <div class="layout-container">
+            <figure class="app-img-three">
+                <img src="images/approach/approch-03.jpg" alt="UXDOTS Design is not for philosophy it's for life">
+                <figCaption>"Design is not for philosophy it's for life."</figCaption>
+            </figure>
         </div>
     </section>
     <!--end approach-image-panel-->
@@ -288,8 +258,8 @@
                 <div class="layout-sm-6">
                      <aside class="content-half-block approach-content-block">
                         <h3 class="title">FRONT-END DEVELOPMENT</h3>
-                        <h4>Design attracts users before they even think about.</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>Conversion happens to deploy an interactive hunch.</h4>
+                        <p>Our engineers are promised to empower an impressing front-end to your software presence. Dosen’t matter how complicated the complexity is. We hover over challenges.</p>
                     </aside>
                 </div>
                 <div class="layout-sm-6 block-wrap hide-mobile">
@@ -314,19 +284,19 @@
             <div class="layout-wrapper block-wrap">
                 <div class="block layout-xs-6 layout-sm-3 coding pull-right-sm">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-coding.png" alt="">
+                        <img src="images/block-icons/ico-coding.png" alt="UXDOTS coding">
                         <div class="block-text">CODING</div>
                     </div>
                 </div>
                 <div class="block layout-xs-6 layout-sm-3 script pull-right-sm">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-script.png" alt="">
+                        <img src="images/block-icons/ico-script.png" alt="UXDOTS scripts">
                         <div class="block-text">SCRIPT</div>
                     </div>
                 </div>
                 <div class="block layout-xs-6 layout-sm-3 interactive-animation pull-right-sm">
                     <div class="item-center">
-                        <img src="images/block-icons/ico-interactive-animation.png" alt="">
+                        <img src="images/block-icons/ico-interactive-animation.png" alt="UXDOTS animation">
                         <div class="block-text">ANIMATION</div>
                     </div>
                 </div>
@@ -334,7 +304,7 @@
         </div>
         <div class="img-approach-frontend">
             <div class="layout-container"> 
-                <img src="images/approach-frontend.png" alt="">
+                <img src="images/approach-frontend.png" alt="UXDOTS front-end development">
             </div>
         </div>
     </div>
@@ -347,8 +317,8 @@
                 <div class="layout-sm-6">
                      <aside class="content-half-block approach-content-block">
                         <h3 class="title">QUALITY ASSURANCE</h3>
-                        <h4>Lorem Ipsum is simply dummy text of the printing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>Dive in, get the patches, and rectify them all.</h4>
+                        <p>Our testing side is quite exceptional in finding bugs. Corporated with a highly efficient wing of quality assurance, we pull out zero error at the time of release.</p>
                     </aside>
                 </div>
                 <div class="layout-sm-6 block-wrap">
@@ -369,13 +339,13 @@
                     </div>
                     <div class="block layout-xs-6 quality">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-quality.png" alt="">
+                            <img src="images/block-icons/ico-quality.png" alt="UXDOTS quality control">
                             <div class="block-text">QUALITY CONTROL</div>
                         </div>
                     </div>
                     <div class="block layout-xs-6 qa-testing">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-qa-testing.png" alt="">
+                            <img src="images/block-icons/ico-qa-testing.png" alt="UXDOTS testing">
                             <div class="block-text">TESTING</div>
                         </div>
                     </div>
@@ -395,7 +365,7 @@
                     </div>
                     <div class="block layout-xs-6 qa-assurance">
                         <div class="item-center">
-                            <img src="images/block-icons/ico-qa-assurance.png" alt="">
+                            <img src="images/block-icons/ico-qa-assurance.png" alt="UXDOTS quality assurance">
                             <div class="block-text">QUALITY ASSURANCE</div>
                         </div>
                     </div>
@@ -407,10 +377,10 @@
     
     <div class="approach-launch-panel">
         <div class="layout-container">
-            <img src="images/approach-launch.png" alt="">
+            <img src="images/approach-launch.png" alt="UXDOTS project launch">
             <aside class="approach-content">
                 <h4>Like our approach?</h4>
-                <p>Lorem Ipsum is simply dummy text of the. View our <a href="#">recent projects</a></p> 
+                <p>View our <a href="#/work">recent projects</a></p> 
             </aside>
             <div class="launch">
                 LAUNCH

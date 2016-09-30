@@ -1,0 +1,7 @@
+#Primary Color - #3a3336
+
+
+#Secondary Color - #d90e75
+
+
+Custome Color    - #3a3336

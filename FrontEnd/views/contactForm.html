@@ -1,0 +1,43 @@
+                 <form name="userForm" class="contact-form" ng-submit="formSubmit()" novalidate>
+                     <div class="form-control">
+                         <label for="">Name<sup>*</sup></label>
+                         <div class="field">
+                             <input type="text" placeholder="Name" name="name" class="name" ng-model="formData.name" required>
+                             <span class="error" ng-class="{'error-show': userForm.name.$invalid && !userForm.name.$pristine}">Please type name</span>
+                         </div>
+                     </div>
+                     <div class="form-control">
+                         <label for="">Email<sup>*</sup></label>
+                         <div class="field">
+                             <input type="email" placeholder="Email" name="email" class="email" ng-model="formData.email" required>
+                             <span class="error" ng-class="{'error-show':userForm.email.$invalid && !userForm.email.$pristine}" >Please type email</span>
+                         </div>
+                     </div>
+                     <div class="form-control">
+                         <label for="">Phone</label>
+                         <div class="field">
+                             <input type="text" placeholder="Phone" name="phone" class="phone" ng-model="formData.phone">
+                         </div>
+                     </div>
+                     <div class="form-control checkbox-wrap">
+                         <h6>Interested in:</h6>
+                         <label>
+                             <input type="checkbox" class="checkbox" name="web" ng-model="formData.web"><i class="chekcbox-icon"></i>Web App
+                         </label>
+                         <label>
+                             <input type="checkbox" class="checkbox" name="web" ng-model="formData.mobile"><i class="chekcbox-icon"></i>Mobile App
+                         </label>
+                         <label>
+                             <input type="checkbox" class="checkbox" name="graphic" ng-model="formData.graphic"><i class="chekcbox-icon"></i>Branding &amp; Graphics
+                         </label>
+                     </div>
+                     <div class="form-control">
+                         <label for="">Message</label>
+                         <div class="field">
+                             <textarea name="message" id="" cols="30" rows="10" placeholder="Message" ng-model="formData.message"></textarea>
+                         </div>
+                     </div>
+                     <span ng-show="messageSent" class="success-msg">Your message has been sent, we will contact you soon.</span>
+                     <span ng-show="messageSentFailure" class="failure-msg">Oops, your message did not send.</span>
+                     <button  ng-click="sent=true" class="submit-query" type="submit" ng-disabled="userForm.$invalid">Submit Enquiry <span ng-class="{'spin': sent }"></span> </button>
+                 </form>

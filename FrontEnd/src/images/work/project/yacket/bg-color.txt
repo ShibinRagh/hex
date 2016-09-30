@@ -1,0 +1,7 @@
+#Primary Color - #16a085
+
+
+#Secondary Color - #303236
+
+
+Custome Color    - #95b8b2

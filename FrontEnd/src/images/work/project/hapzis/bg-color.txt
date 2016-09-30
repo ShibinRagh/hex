@@ -1,0 +1,6 @@
+#Primary Color - #ea2c67
+
+
+#Secondary Color - #302226
+
+#custome Color  -  #3f393b

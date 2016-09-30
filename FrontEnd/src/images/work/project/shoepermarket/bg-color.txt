@@ -1,0 +1,7 @@
+#Primary Color - #28a0d2
+
+
+#Secondary Color - #2e2e2e
+
+
+Custom Color    - #3b6b94

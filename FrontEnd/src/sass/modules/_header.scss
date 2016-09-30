@@ -1,0 +1,58 @@
+.main-header {
+    padding: 20px 0;
+    .main-logo {
+        color: $header-text;
+        width:54px; 
+    }
+}
+.main-logo{
+    outline:none !important;
+    span{
+        font-size:0;
+    }
+    &:hover, &:focus{
+        color: $header-text !important;
+    }
+}
+.nav-btn {
+    $width-line: 26px;
+    $height-line: 4px;
+    float: right;
+    position: relative; 
+    margin-top:10px;
+    @include size($width-line, 22px);
+    .menu-line {
+        width: $width-line;
+        height: $height-line;
+        display: block;
+        background-color: $header-text;
+        @include transition(all, 0.2s, ease-in);
+        &:after,
+        &:before {
+            content: "";
+            position: relative;
+            @include transition(all, 0.2s, ease-in);
+            width:80%;
+            height: $height-line;
+            background-color: $header-text;
+            display: block;
+            left: 0;
+        }
+        &:before {
+            top: -8px;
+        }
+        &:after {
+            bottom: -4px;
+        }
+    }
+    &:hover {
+        .menu-line:before {
+            top: -7px;
+            width:100%;
+        }
+        .menu-line:after {
+            bottom: -3px;
+            width:100%;
+        }
+    }
+}

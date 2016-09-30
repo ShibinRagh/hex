@@ -1,0 +1,7 @@
+#Primary Color - #f05045
+
+
+#Secondary Color - #fbde57
+
+
+Custome Color    - #414142

@@ -1,30 +1,31 @@
-<div class="work-block-switch angular-animate"  ng-show="mySwitch">
-    <div class="work-block work-block-list angular-animate" ng-repeat="item in workData | filter:searchText  | limitTo:workLimit">   
+    <div class="work-block-switch angular-animate"  ng-show="!mySwitch">
+    <div class="work-block work-block-list angular-animate" ng-repeat="item in workData | filter:searchWord  | limitTo:workLimit">   
         <div class="layout-wrapper">
             <div class="block-wrap layout-sm-6">
-                <div class="block work-link layout-sm-6" style="background:{{item.primaryColor}};">
-                    <a class="link-block" ng-href="#/casestudy/{{item.name}}">
-                        <img ng-src="{{item.image.imageLogoWhite}}" alt="" class="img-middle">
+                <div class="block work-link layout-sm-6" ng-style="{background:item.primaryColor};">
+                    <div class="link-block">
+                        <img ng-src="{{item.image.imageLogoWhite}}" alt="UXDOTS project logo" class="img-middle">
                         <i class="icon-down-arrow-metro"></i>
-                    </a>
+                    </div>
                 </div>
                 <a class="block work-view-more layout-sm-6" ng-href="#/casestudy/{{item.name}}">
                     <span class="item-center">
                         <i class="icon-arrow-right-metro"></i>
-                        <span class="block-text" ng-if="searchText.type != 'mobile'">view more details</span>
-                        <span class="block-text" ng-if="searchText.type == 'mobile'">view Presentation</span>
+                        <span class="block-text" ng-if="item.typeWeb">casestudy</span>
+                        <span class="block-text" ng-if="item.typeMobile">Presentation</span>
                     </span>
                 </a>
             </div>
         </div>
         <div class="layout-wrapper work-dec-panel"> 
             <div class="layout-sm-6 work-dec">
-                <div class="type">{{item.type}}</div>
+                <div class="type" ng-if="item.typeWeb">web app</div>
+                <div class="type" ng-if="item.typeMobile">mobile app</div>
                 <h2>{{item.name}}</h2>
-                <p>{{item.description}}</p>
+                <p>{{item.description | limitTo:workDecLimitTo }}</p>
             </div>
             <figure class="layout-sm-6 work-img">
-                <img ng-src="{{item.image.imageWork}}" alt="">
+                <img ng-src="{{item.image.imageWork}}" alt="UXDOTS project">
             </figure>
         </div>
     </div>
@@ -34,13 +35,22 @@
     </div>
 </div>
 
-<div class="work-block-switch angular-animate"  ng-show="!mySwitch">
-    <div class="work-block work-block-grid layout-sm-3 angular-animate" ng-repeat="item in workData | filter:searchText">
+<div class="work-block-switch angular-animate"  ng-show="mySwitch" 
+    ng-class="{'row-1' : filtered.length >= 1 && filtered.length <=4 , 
+    'row-2' : filtered.length >= 5 && filtered.length <= 8,
+    'row-3' : filtered.length >= 9 && filtered.length <= 12,
+    'row-4' : filtered.length >= 13 && filtered.length <= 16,
+    'row-5' : filtered.length >= 17 && filtered.length <= 20,
+    'row-6' : filtered.length >= 21 && filtered.length <= 24,
+    }" >
+    
+    
+    <div class="work-block work-block-grid layout-sm-3 angular-animate item-{{$index+1}}" ng-repeat="item in filtered = (workData | filter:searchWord)">
         <div class="block-wrap"> 
-            <div class="block work-link" style="background:{{item.color}};">
+            <div class="block work-link" ng-style="{background:item.primaryColor};">
                 <a class="link-block" ng-href="#/casestudy/{{item.name}}">
-                    <img ng-src="{{item.image.imageLogoWhite}}" alt="" class="img-middle">
-                    <i class="icon-down-arrow-metro"></i>
+                    <img ng-src="{{item.image.imageLogoWhite}}" alt="UXDOTS project" class="img-middle">
+                    <span class="project-name">{{item.name}}</span>
                 </a>
             </div>
         </div>

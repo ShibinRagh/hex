@@ -1,0 +1,832 @@
+[
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : true,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "Feeba",
+        "projectSector"                    : "Social",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#a4c22c", 
+        "secondaryColor"                   : "#20232a",
+        "customColor"                      : "#0078b4",
+        "client"                           : "Declan McNeela",
+        "clientProfession"                 : "Founder of Feeba",
+        "clientImage"                      : "images/work/project/feeba/client/client.jpg",
+        "website"                          : "www.feeba.com",
+        "description"                      : "Now give and get feedbacks within 20 seconds. That's what Feeba stunningly offers to the ease of trending entrepreneurial world. With Feeba customers can give feedback about any entrepreneurship, and entrepreneurships could improve from it. The incredible user-friendliness in user experience and interface are the core attraction of the platform.",
+        "testimonial"                      :  "I really enjoy working with the guys and girls at Toobler. Although we aren't on the same continent, our skype meetings are very productive and fun. They really care about quality and we always work well together until we find the right solution. Trust and excellent communication makes working with the Toobler Team very enjoyable.", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/feeba/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/feeba/banners/home.png",
+                    "imageWork"               : "images/work/project/feeba/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/feeba/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/feeba/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/feeba/screens/ux.png",
+                    "imageDesign"             : "images/work/project/feeba/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/opensans.png",
+                    "secondaryFont"           : "images/work/fonts/proximanova.png"
+                },
+        "icons" :[
+                    "images/work/project/feeba/icons/icon1.png",
+                    "images/work/project/feeba/icons/icon2.png",
+                    "images/work/project/feeba/icons/icon3.png",
+                    "images/work/project/feeba/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "javaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            },
+            {
+                "frontendToolName"  : "Gulp",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-gulp.png"
+            }
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/feeba/screens/mobile.png",
+            "tab"    :  "images/work/project/feeba/screens/tab.png",
+            "desktop" :  "images/work/project/feeba/screens/desktop.png"
+        }
+            
+    },
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "HyperVerge",
+        "projectSector"                    : "IT Service",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#f05045",
+        "secondaryColor"                   : "#fbde57",
+        "customColor"                      : "#414142",
+        "client"                           : "Kedar Kulkarni",
+        "clientProfession"                 : "Founder of HyperVerge",
+        "clientImage"                      : "images/work/project/hyperverge/client/client.jpg",
+        "website"                          : "www.hyperverge.co",
+        "description"                      : "Hyperverge is a web interface to recognize or identify images and videos that you have or available in the internet using deep learning algorithms. That is, if you have an image and you have no clue what exactly its name is, Hyperverge comes into the action. Just upload the image on Hyperverge and let Hyperverge to identify the image.",
+        "testimonial"                      :  "", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/hyperverge/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/hyperverge/banners/home.png",
+                    "imageWork"               : "images/work/project/hyperverge/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/hyperverge/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/hyperverge/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/hyperverge/screens/ux.png",
+                    "imageDesign"             : "images/work/project/hyperverge/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/akzidenz-grotesk.png",
+                    "secondaryFont"           : "images/work/fonts/helvetica-neue.png"
+                },
+        "icons" :[
+                    "images/work/project/hyperverge/icons/icon1.png",
+                    "images/work/project/hyperverge/icons/icon2.png",
+                    "images/work/project/hyperverge/icons/icon3.png",
+                    "images/work/project/hyperverge/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            },
+            {
+                "frontendToolName"  : "Gulp",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-gulp.png"
+            }
+            
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/hyperverge/screens/mobile.png",
+            "tab"    :  "images/work/project/hyperverge/screens/tab.png",
+            "desktop" :  "images/work/project/hyperverge/screens/desktop.png"
+        }
+            
+    }, 
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "FarmBucket",
+        "projectSector"                    : "Agriculture",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#9cc403", 
+        "secondaryColor"                   : "#323232",
+        "customColor"                      : "#feac00",
+        "client"                           : "Toobler",
+        "clientProfession"                 : "Toobler",
+        "clientImage"                      : "images/work/project/farmbucket/client/client.jpg",
+        "website"                          : "www.farmbucket.com",
+        "description"                      : "Farmbucket is a unique digital platform founded to list, discover and buy fresh food with the intention to help farmers run profitable organic farm houses, and ease people’s sources of having fresh food at a very reasonable price without a middleman. Farmbucket lets you crowdfarming by creating free campaigns for raising funds from people.",
+        "testimonial"                      :  "", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/farmbucket/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/farmbucket/banners/home.png",
+                    "imageWork"               : "images/work/project/farmbucket/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/farmbucket/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/farmbucket/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/farmbucket/screens/ux.png",
+                    "imageDesign"             : "images/work/project/farmbucket/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/sego-ui.png",
+                    "secondaryFont"           : "images/work/fonts/opensans.png"
+                },
+        "icons" :[
+                    "images/work/project/farmbucket/icons/icon1.png",
+                    "images/work/project/farmbucket/icons/icon2.png",
+                    "images/work/project/farmbucket/icons/icon3.png",
+                    "images/work/project/farmbucket/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            },
+            {
+                "frontendToolName"  : "Grunt",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-grunt.png"
+            }
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/farmbucket/screens/mobile.png",
+            "tab"    :  "images/work/project/farmbucket/screens/tab.png",
+            "desktop" :  "images/work/project/farmbucket/screens/desktop.png"
+        }
+            
+    },
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : true,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "AdvisorFi",
+        "projectSector"                    : "Financial and Busines",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#099acc",
+        "secondaryColor"                   : "#333333",
+        "customColor"                      : "#2e3436",
+        "client"                           : "Will Lopez",
+        "clientProfession"                 : "Founder of Advisorfi",
+        "clientImage"                      : "images/work/project/advisorfi/client/client.jpg",
+        "website"                          : "www.advisorfi.com",
+        "description"                      : "Advisorfi is an online dashboard that synchronises with all your accounting software, to gather insights and measure the health of your business in real-time. It will then crunch the numbers and show you awesome insights that you choose to see right in the dashboard, in an easy to understand format.",
+        "testimonial"                      :  "I believe that Toobler provided me the highest level of communication & coding during my product development. The world has greatly benefited from hands of their innovative team!", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/advisorfi/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/advisorfi/banners/home.png",
+                    "imageWork"               : "images/work/project/advisorfi/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/advisorfi/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/advisorfi/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/advisorfi/screens/ux.png",
+                    "imageDesign"             : "images/work/project/advisorfi/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/proximanova.png",
+                    "secondaryFont"           : "images/work/fonts/opensans.png"
+                },
+        "icons" :[
+                    "images/work/project/advisorfi/icons/icon1.png",
+                    "images/work/project/advisorfi/icons/icon2.png",
+                    "images/work/project/advisorfi/icons/icon3.png",
+                    "images/work/project/advisorfi/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            }
+            
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/advisorfi/screens/mobile.png",
+            "tab"    :  "images/work/project/advisorfi/screens/tab.png",
+            "desktop" :  "images/work/project/advisorfi/screens/desktop.png"
+        }
+            
+    },
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : true,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "Yacket",
+        "projectSector"                    : "Social",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#16a085",
+        "secondaryColor"                   : "#303236",
+        "customColor"                      : "#95b8b2",
+        "client"                           : "Aaron Smith",
+        "clientProfession"                 : "Founder of Yacket",
+        "clientImage"                      : "images/work/project/yacket/client/client.jpg",
+        "website"                          : "www.yacket.com",
+        "description"                      : "Yacket is a twitter polling application diving deeper into demography analytics. Yacket lets you ask yes/no questions, multiple option questions and is used for twitter handle battles for hashtag promotion. Based on the polls like the above mentioned questions, you can the view deeper demography dimensions like Education, Politics and Religion.",
+     
+        "testimonial"                      : "One of the key aspects working with Toobler is that they are incredibly self-contained. The team’s skills were there throughout the entire cycle of the project. Whether it’s wireframe creation, user experience development, user interface designing, front-end development, or web development, the team’s sheer presence was there until the completion of the project. What makes the big difference is the team crafts the entire solution for any scenario.", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/yacket/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/yacket/banners/home.png",
+                    "imageWork"               : "images/work/project/yacket/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/yacket/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/yacket/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/yacket/screens/ux.png",
+                    "imageDesign"             : "images/work/project/yacket/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/proximanova.png",
+                    "secondaryFont"           : "images/work/fonts/patua.png"
+                },
+        "icons" :[
+                    "images/work/project/yacket/icons/icon1.png",
+                    "images/work/project/yacket/icons/icon2.png",
+                    "images/work/project/yacket/icons/icon3.png",
+                    "images/work/project/yacket/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            }
+            
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/yacket/screens/mobile.png",
+            "tab"    :  "images/work/project/yacket/screens/tab.png",
+            "desktop" :  "images/work/project/yacket/screens/desktop.png"
+        }
+            
+    },
+{
+        "id"                               : 3,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Holoptica",
+        "primaryColor"                     : "#231717",
+        "description"                      : "Holoptica is an IoT based solution to find lost objects with the help of a beacon attached to it. The platform is currently available only in iOS devices. ",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/holoptica/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/holoptica/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/holoptica/banners/home.png",
+                    "imageWork"               : "images/work/project/holoptica/banners/work.jpg",
+                    "presentation"            : "images/work/project/holoptica/presentation/presentation.jpg"
+        }
+    },
+ 
+   
+   {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "Jungle Juniors",
+        "projectSector"                    : "Human Resource",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#fba31b", 
+        "secondaryColor"                   : "#34495e",
+        "customColor"                      : "#0d6097",
+        "client"                           : "Dennis Predovnik",
+        "clientProfession"                 : "Founder of Jungle Juniors",
+        "clientImage"                      : "images/work/project/jungle-juniors/client/client.jpg",
+        "website"                          : "www.junglejuniors.com.au",
+        "description"                      : "Jungle Juniors is a web platform where people can hire a nanny or a sitter in Perth, Sydney, Melbourne, and Brisbane locations. All you have to do is select your preferred location, answer a few simple questions, select the best candidate from the instant list, book the candidate, make the payment and it’s all done! Incredible, isn’t it? ",
+        "testimonial"                      :  "", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/jungle-juniors/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/jungle-juniors/banners/home.png",
+                    "imageWork"               : "images/work/project/jungle-juniors/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/jungle-juniors/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/jungle-juniors/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/jungle-juniors/screens/ux.png",
+                    "imageDesign"             : "images/work/project/jungle-juniors/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/asap.png",
+                    "secondaryFont"           : "images/work/fonts/museo.png"
+                },
+        "icons" :[
+                    "images/work/project/jungle-juniors/icons/icon1.png",
+                    "images/work/project/jungle-juniors/icons/icon2.png",
+                    "images/work/project/jungle-juniors/icons/icon3.png",
+                    "images/work/project/jungle-juniors/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            },
+            {
+                "frontendToolName"  : "Gulp",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-gulp.png"
+            }
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/jungle-juniors/screens/mobile.png",
+            "tab"    :  "images/work/project/jungle-juniors/screens/tab.png",
+            "desktop" :  "images/work/project/jungle-juniors/screens/desktop.png"
+        }
+            
+    },
+
+    {
+        "id"                               : 6,
+        "showHome"                         : false,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Secure Point",
+        "primaryColor"                     : "#ff3b2f",
+        "description"                      : "An Android-only micro messenger with a refreshing face to interact with your friends, receive notifications about subscribed feeds.",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/secure-point/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/secure-point/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/secure-point/banners/home.png",
+                    "imageWork"               : "images/work/project/secure-point/banners/work.jpg",
+                    "presentation"            : "images/work/project/secure-point/presentation/presentation.jpg"
+        }
+    },
+  {
+        "id"                               : 5,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Updations",
+        "primaryColor"                     : "#202020",
+        "description"                      : "Updations is a news clustering web app that mines stories from all major online news publishers and keeps you updated with latest buzzes. The platform currently focuses on Indian territory. So. Never ever miss stories happening across you. Start updating yourself.",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/updations/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/updations/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/updations/banners/home.png",
+                    "imageWork"               : "images/work/project/updations/banners/work.jpg",
+                    "presentation"            : "images/work/project/updations/presentation/presentation.jpg"
+        }
+    },    
+
+
+    
+     
+    
+
+    
+ 
+    {
+        "id"                               : 0,
+        "showHome"                         : false,
+        "testimonialShowHome"              : true,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "Shoepermarket",
+        "projectSector"                    : "E-Commerce",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#28a0d2",
+        "secondaryColor"                   : "#2e2e2e",
+        "customColor"                      : "#3b6b94",
+        "client"                           : "Jesus Estrella",
+        "clientProfession"                 : "Director & CEO, Shopermarket",
+        "clientImage"                      : "images/work/project/shoepermarket/client/client.jpg",
+        "website"                          : "www.shoepermarket.com",
+        "description"                      : "TheShoeperMarket.com is a complete e-commerce platform for canvas-freaks who just love to put on x number of shoe pairs. It's also a place for merchants to sell their shoes. In short, people can buy and sell shoes on shoepermarket enjoying several unmatched user experience that they can never have in the alternatives.",
+        "testimonial"                      : "After trying unsuccessfully with other developers I finally turned to the team at Toobler and they took my idea and brought it to life. Immediately Toobler saw my vision collaborated with me to fine tune it and most importantly get it done. The communication and client care is truly second to none, they treated and continue to treat me with professionalism as a team member on the project and not just a customer.", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/shoepermarket/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/shoepermarket/banners/home.png",
+                    "imageWork"               : "images/work/project/shoepermarket/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/shoepermarket/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/shoepermarket/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/shoepermarket/screens/ux.png",
+                    "imageDesign"             : "images/work/project/shoepermarket/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/roboto.png",
+                    "secondaryFont"           : "images/work/fonts/opensans.png"
+                },
+        "icons" :[
+                    "images/work/project/shoepermarket/icons/icon1.png",
+                    "images/work/project/shoepermarket/icons/icon2.png",
+                    "images/work/project/shoepermarket/icons/icon3.png",
+                    "images/work/project/shoepermarket/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            }
+            
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/shoepermarket/screens/mobile.png",
+            "tab"    :  "images/work/project/shoepermarket/screens/tab.png",
+            "desktop" :  "images/work/project/shoepermarket/screens/desktop.png"
+        }
+            
+    },
+  
+    
+
+   
+    
+ 
+    
+    
+    {
+        "id"                               : 4,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Thoppan",
+        "primaryColor"                     : "#282828",
+        "description"                      : "Thoppan is an Android-only app for online shopping from the nearby shops based on the location. The app lists the products of the nearest location and the prices they carry. ",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/thoppan/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/thoppan/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/thoppan/banners/home.png",
+                    "imageWork"               : "images/work/project/thoppan/banners/work.jpg",
+                    "presentation"            : "images/work/project/thoppan/presentation/presentation.jpg"
+        }
+    },
+       {
+        "id"                               : 6,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Pipe",
+        "primaryColor"                     : "#ed8392",
+        "description"                      : "An Android-only micro messenger with a refreshing face to interact with your friends, receive notifications about subscribed feeds.",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/pipe/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/pipe/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/pipe/banners/home.png",
+                    "imageWork"               : "images/work/project/pipe/banners/work.jpg",
+                    "presentation"            : "images/work/project/pipe/presentation/presentation.jpg"
+        }
+    },
+    {
+        "id"                               : 6,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Dragon King",
+        "primaryColor"                     : "#ff3b2f",
+        "description"                      : "A powerful Android app for the participants in the human-powered watercraft, dragon boat. The app plays a major role in the communication between them.",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/dragon-king/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/dragon-king/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/dragon-king/banners/home.png",
+                    "imageWork"               : "images/work/project/dragon-king/banners/work.jpg",
+                    "presentation"            : "images/work/project/dragon-king/presentation/presentation.jpg"
+        }
+    },
+  {
+        "id"                               : 0,
+        "showHome"                         : true,
+        "testimonialShowHome"              : true,
+        "typeWeb"                          : true,
+        "typeMobile"                       : false,
+        "name"                             : "Plicks",
+        "projectSector"                    : "Social",
+        "projectRequirment"                : "UI/UX Design and Development",
+        "primaryColor"                     : "#10a39e",
+        "secondaryColor"                   : "#333333",
+        "customColor"                      : "#546181",
+        "client"                           : "Hassan Bawab",
+        "clientProfession"                 : "Founder & CEO, Plicks",
+        "clientImage"                      : "images/work/project/plicks/client/client.jpg",
+        "website"                          : "www.plicks.com",
+        "description"                      : "Plicks is an online platform that allows you to club pictures from multiple sources to create albums. Images can be clubbed from users' social media accounts and local storages. The albums created on Plicks can be easily shared via blogs, websites and apps.",
+        "testimonial"                      : "It's been over a couple of years we have been working with Toobler and we really feel like one team though we are from different continents. Adapting flexibility to our needs is just fantastic and exceptional about Toobler. We'll be extending our relationship with the company.", 
+        "image" :
+                {
+                    "imageLogoWhite"          : "images/work/project/plicks/logo/logo-white.png",
+                    "imageHome"               : "images/work/project/plicks/banners/home.png",
+                    "imageWork"               : "images/work/project/plicks/banners/work.jpg",
+                    "imageCasestudyTop"       : "images/work/project/plicks/banners/casestudy-top.jpg",
+                    "imageLogoColor"          : "images/work/project/plicks/logo/logo-color.png",
+                    "imageUX"                 : "images/work/project/plicks/screens/ux.png",
+                    "imageDesign"             : "images/work/project/plicks/screens/design.jpg"
+                },
+        "fonts" :
+                {
+                    "primaryFont"             : "images/work/fonts/lato.png",
+                    "secondaryFont"           : "images/work/fonts/opensans.png"
+                },
+        "icons" :[
+                    "images/work/project/plicks/icons/icon1.png",
+                    "images/work/project/plicks/icons/icon2.png",
+                    "images/work/project/plicks/icons/icon3.png",
+                    "images/work/project/plicks/icons/icon4.png"
+                ],
+        "uiTools" :[
+            {
+                "uiToolName"  : "PHOTOSHOP",
+                "uiToolImage" : "images/work/ui-used-tools/ico-photoshop.png"
+            },
+            {
+                "uiToolName"  : "ILLUSTRATOR",
+                "uiToolImage" : "images/work/ui-used-tools/ico-illustrator.png"
+            } 
+        ],
+        "frontendTools" :[
+            {
+                "frontendToolName"  : "HTML5",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-html5.png"
+            },
+            {
+                "frontendToolName"  : "CSS3",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-css3.png"
+            },
+            {
+                "frontendToolName"  : "SASS",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-sass.png"
+            },
+            {
+                "frontendToolName"  : "BOOTSTRAP",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-bootstrap.png"
+            },
+            {
+                "frontendToolName"  : "jQuery",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-jquery.png"
+            },
+            {
+                "frontendToolName"  : "JavaScript",
+                "frontendToolImage" : "images/work/frontend-used-tools/ico-javascript.png"
+            }
+            
+        ],
+        "screens" :{
+            "mobile" :  "images/work/project/plicks/screens/mobile.png",
+            "tab"    :  "images/work/project/plicks/screens/tab.png",
+            "desktop" :  "images/work/project/plicks/screens/desktop.png"
+        }
+            
+    },
+  
+    
+    {
+        "id"                               : 6,
+        "showHome"                         : true,
+        "testimonialShowHome"              : false,
+        "typeWeb"                          : false,
+        "typeMobile"                       : true,
+        "name"                             : "Gradur",
+        "primaryColor"                     : "#000000",
+        "description"                      : "Gradur is an iOS Radio app to play radio channels quite easily. The app streams radio channels via the requested web URLs and ensure a comprehensive experience to those who don’t want to stop listening radio programs.",
+        "testimonial"                      : "", 
+        "image" :{
+                    "imageLogoWhite"          : "images/work/project/radio/logo/logo-white.png",
+                    "imageLogoColor"          : "images/work/project/radio/logo/logo-color.png",
+                    "imageHome"               : "images/work/project/radio/banners/home.png",
+                    "imageWork"               : "images/work/project/radio/banners/work.jpg",
+                    "presentation"            : "images/work/project/radio/presentation/presentation.jpg"
+        }
+    }
+    
+    
+    
+    
+     
+]

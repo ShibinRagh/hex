@@ -1,0 +1,7 @@
+#Primary Color  - #fba31b
+
+
+#Secondary Color - #34495e
+
+
+Custom Color    - #198bac

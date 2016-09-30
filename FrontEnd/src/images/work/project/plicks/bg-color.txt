@@ -1,0 +1,10 @@
+#Primary Color - #10a39e
+
+
+#Secondary Color - #333333
+
+
+Custome Color    - #546181
+
+
+

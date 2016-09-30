@@ -4,12 +4,12 @@
     <div class="about">
         <div class="layout-container">
             <aside class="layout-sm-11 layout-md-7 about-content">
-                <h2 class="bold"><span>AT A GLANCE</span>Have no fear of perfection, you will never know the reach.</h2>
-                <div class="toobler-hex">
-                    <a href="//www.toobler.com"><img src="images/toobler-white.png" alt=""></a> <cite></cite> <span>HEX</span>
+                <h2 class="bold"><span>Guns and roses</span>Our guns are loaded. Get set to be hit with bullets of creativity.</h2>
+                <div class="toobler-uxdots">
+                    <a href="//www.toobler.com"><img src="images/toobler-white.png" alt=""></a> <cite></cite> <span class="icon-logo"></span>
                 </div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <p>Hex is a web agency  based in Montreal offering a wide range of creative services  and strategic  for brands, companies, foundations and organizations exciting. Our team of strategists, designers and web developers  is committed to building what you need to achieve your marketing goals. Our delivery process goes through four levels of expertise  to ensure a high quality service.</p>
+<p>UXDots is a subsidiary and a resolute wing of Toobler Technologies exclusively for design and front-end development running with the core ideology, empowerment. </p>
+                <p>We, UXDots, believe in the creed, digital transformation. Our proficient heads always put their brain mated with creativity to ensure utmost perfection in detail in each and every art we pull out. Redefinition is the key element we follow rather than following the traditional patterns. We break the rules and always project refreshed faces in the works we commit. </p>
             </aside>
             <div class="layout-sm-5 hide-mobile hide-only-sm">
                 <aside class="img-about">
@@ -20,32 +20,32 @@
     </div>
     <!--end about-->
     <!--about page process start-->
-        <div class="aboutpage-process layout-wrapper hide-mobile">
+        <div class="aboutpage-process layout-wrapper" ng-if="desktopScreen">
             <div class="about-process plan layout-sm-3">
                 <span class="bg-aboutpage-process"></span>
                 <figure>
-                    <img src="images/img-weplan.png" alt="">
+                    <img src="images/about/about-image-01.jpg" alt="">
                 </figure>
                 <h3>WE PLAN<span></span></h3>
             </div>
             <div class="about-process create layout-sm-3">
                 <span class="bg-aboutpage-process"></span>
                 <figure>
-                    <img src="images/img-wecreate.png" alt="">
+                    <img src="images/about/about-image-02.jpg" alt="">
                 </figure>
                 <h3>WE CREATE<span></span></h3>
             </div>
             <div class="about-process analyze layout-sm-3">
                 <span class="bg-aboutpage-process"></span>
                 <figure>
-                    <img src="images/img-weanalyze.png" alt="">
+                    <img src="images/about/about-image-03.jpg" alt="">
                 </figure>
                 <h3>WE ANALYZE<span></span></h3>
             </div>
             <div class="about-process result layout-sm-3">
                 <span class="bg-aboutpage-process"></span>
                 <figure>
-                    <img src="images/img-getresults.png" alt="">
+                    <img src="images/about/about-image-04.jpg" alt="">
                 </figure>
                 <h3>GET RESULTS<span></span></h3>
             </div>
@@ -58,8 +58,8 @@
                 <aside class="layout-sm-6 pull-right-sm">
                     <div class="content-half-block">
                         <h3 class="title">Services</h3>
-                        <h4>Understand user behavior, needs and perspectives</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>We’re abundant just for the following artistic values</h4>
+                        <p>Looking to create an enhanced front face to the online platform you hold? Doesn’t matter how complex things are. We’ll knock out.</p>
                     </div>
                 </aside>
                 <div class="layout-sm-6 block-wrap">
@@ -139,8 +139,8 @@
                 </div>
                 <div class="block layout-sm-6 quote hide-mobile">
                     <blockquote>
-                        "More than a brand identity, we create a whole universe for your brand."
-                        <cite><i class="icon-twitter"></i> @HEX</cite>
+                        "Coming together is a beginning. Keeping together is progress. Working together is success."
+                        <cite><i class="icon-twitter"></i> @UXDOTS</cite> 
                     </blockquote>
                 </div>
             </div>
@@ -153,9 +153,9 @@
         <div class="layout-container">
             <aside class="layout-sm-10">
                     <div class="content-half-block meet-our-family">
-                        <h3 class="title">Meet our fmily</h3>
-                        <h4>Hex is a digital experience design company with roots in India</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h3 class="title">Meet our family</h3>
+                        <h4>Here we’re, the men with full throttle to hit the gruelling walls.</h4>
+                        <p>Meet us and know us in person. We’re a young side of highly passionate stories. Tap on the faces individually and skim through the passion we hold. </p>
                     </div>
             </aside>
             <aside class="layout-sm-2 hide-mobile"></aside>
@@ -168,27 +168,34 @@
                         <p>{{member.desigination}}</p>
                         <span class="view-popup"></span>
                     </div>
-                    <img src="images/team/medium/bibin-babu.png" alt="">
+                    <img ng-src="{{member.image.medium}}" alt="UXB Team - {{member.name}}">
                 </div>
-                <div class="overlay angular-animate" ng-if="team.teamMemberPopupShow" ng-click="team.teamMemberPopup()"></div>
-                <aside class="profile layout-container angular-animate" ng-if="team.teamMemberPopupShow">
+                
+                
+                <div class="overlay-wrap angular-animate" ng-if="team.teamMemberPopupShow" ng-click="team.teamMemberPopup()">
+                    <div class="overlay"></div>
+                </div>
+                <aside class="profile layout-container angular-animate" ng-if="team.teamMemberPopupShow"
+                    ng-repeat="member in team.teamMembers.slice(team.memberIndex, team.teamMembers.length) | limitTo: 1">
+                    <span class="team-left icon-arrow-thin-left" ng-click="team.teamLeft()" ng-if="team.leftOver"></span> 
+                    <span class="team-right icon-arrow-thin-right" ng-click="team.teamRight()" ng-if="team.rightOver"></span>
                     <span class="icon-close" ng-click="team.teamMemberPopup()"></span>
                     <div class="layout-sm-6 profile-description-wrap">
                         <div class="profile-description">
-                            <h3><span>I'm</span>{{team.member.name}}</h3>
-                            <h4>{{team.member.desigination}}</h4>
-                            <p>{{team.member.aboutMe}}</p>
-                            <div class="profile-social-media" ng-if="team.member.socialMedia">
-                                <span class="icon-profile-behance" ng-if="team.member.socialMedia.behance"></span>
-                                <span class="icon-profile-dribbble" ng-if="team.member.socialMedia.dribbble"></span>
-                                <span class="icon-profile-linkedin" ng-if="team.member.socialMedia.linkedin"></span>
-                                <span class="icon-profile-twitter" ng-if="team.member.socialMedia.twitter"></span>
+                            <h3><span>I'm </span>{{member.name}}</h3> 
+                            <h4>{{member.desigination}}</h4>
+                            <p>{{member.aboutMe}}</p>
+                            <div class="profile-social-media" ng-if="member.socialMedia" style="display:none;">
+                                <span class="icon-profile-behance" ng-if="member.socialMedia.behance"></span>
+                                <span class="icon-profile-dribbble" ng-if="member.socialMedia.dribbble"></span>
+                                <span class="icon-profile-linkedin" ng-if="member.socialMedia.linkedin"></span>
+                                <span class="icon-profile-twitter" ng-if="member.socialMedia.twitter"></span>
                             </div>
                         </div>
                     </div>
                     <div class="layout-sm-6 profile-photo">
                         <figure>
-                            <img ng-src="{{team.member.image.large}}" alt="">
+                            <img ng-src="{{member.image.large}}" alt="UXB Team - {{member.name}}">
                         </figure>
                     </div>
                 </aside>
@@ -202,24 +209,17 @@
             <div class="layout-wrapper">
                 <aside class="layout-sm-6">
                     <div class="content-half-block">
-                        <h3 class="title">Client</h3>
-                        <h4>Understand user behavior, needs and perspectives</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h3 class="title">Client roll</h3>
+                        <h4>Businesses we assisted to reach out what they dreamt.</h4>
+                        <p>People at UXDOTS are intended to help clients all through since the very inception. We love doing it from the very scratch and give wings to our priceless clients.</p>
                     </div>
                 </aside>
-                <div class="layout-sm-3 block-wrap">
-                    <div class="block hide-mobile"></div>
-                    <div class="block go-arrow go-arrow-grey">
-                        <div class="item-center">
-                            <i class="icon-right-arrow-metro hide-mobile"></i>
-                            <i class="icon-down-arrow-metro hide-sm"></i>
-                            <span>OUR CLIENTS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="layout-sm-3 block-wrap hide-mobile">
+                <div class="layout-sm-6 block-wrap hide-mobile">
                     <div class="block"></div>
                 </div>
+                
+                
+                
                 <div class="layout-sm-3 block-wrap client-logo angular-animate" ng-repeat="client in about.clients | limitTo:clientLimit">
                     <div class="block">
                        <img ng-src="{{client}}" alt=""> 

@@ -1,0 +1,169 @@
+[
+    {
+        "name": "Bobin George",
+        "desigination": "CEO",
+        "aboutMe": "The pioneering piece of Toobler Technologies. Loves challenges to the core. Sundar Pichai is the figure he want to follow the most. An Indian cricket team fan.",
+        "image": {
+            "medium": "images/team/medium/bobin-george.png",
+            "large": "images/team/large/bobin-george.png"
+        },
+        "socialMedia": {
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Jerry Don",
+        "desigination": "CTO",
+        "aboutMe": "A person with full of gem. Football, Cricket, fishing, swimming and he’s everywhere. Loves riding with his Mark III. Cinematography and Short films are his other worlds.",
+        "image": {
+            "medium": "images/team/medium/jerry-don.png",
+            "large": "images/team/large/jerry-don.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+    {
+        "name": "Dinu Danial",
+        "desigination": "Project Manager",
+        "aboutMe": "Invests time on watching every match of Indian cricket team. Love to see Sachin, and Virat spending in the crease. Also a Johnnie Walker enthusiast.",
+        "image": {
+            "medium": "images/team/medium/dinu-danial.png",
+            "large": "images/team/large/dinu-danial.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+    {
+        "name": "Shibin Ragh",
+        "desigination": "Team Lead",
+        "aboutMe": "The coxswain of the boat steering the team with passionate goals and motivating approaches. He’s a hardcore left thinker and a diehard Neymar Jr. fan.",
+        "image": {
+            "medium": "images/team/medium/shibin-ragh.png",
+            "large": "images/team/large/shibin-ragh.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+{
+        "name": "Siyad Sain",
+        "desigination": "UI/UX Designer",
+        "aboutMe": "He’s a wanderer. Loves freaking out miles in his Suzuki Swift. The Evoque would be the next machine he will be investing time for riding adventures.",
+        "image": {
+            "medium": "images/team/medium/siyad-sain.png",
+            "large": "images/team/large/siyad-sain.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+    {
+        "name": "Divek",
+        "desigination": "Front-end Developer",
+        "aboutMe": "A Tom lover. Addicted to cartoon motion pictures even at this age. He is passionate in snapping wildlife beauties. A seldom alcohol researcher as well.",
+        "image": {
+            "medium": "images/team/medium/divek-das.png",
+            "large": "images/team/large/divek-das.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    }, 
+    {
+        "name": "Niyas Khan",
+        "desigination": "UI/UX Designer",
+        "aboutMe": "He never wants to miss a single match of CR7. A live match at Santiago Bernabéu is already in his to-do list. He also finds time to hunt adventurous snaps.",
+        "image": {
+            "medium": "images/team/medium/niyas-khan.png",
+            "large": "images/team/large/niyas-khan.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },  
+    {
+        "name": "Bibin Babu",
+        "desigination": "UI/UX Designer",
+        "aboutMe": "The artist by behaviour. Takes a detail in every observation he possesses. Tequila gives him wings at times. A hardcore Formula One and michael schumacher fan.",
+        "image": {
+            "medium": "images/team/medium/bibin-babu.png",
+            "large": "images/team/large/bibin-babu.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },  
+    {
+        "name": "Nikhil Krshnan",
+        "desigination": "Front-end Developer",
+        "aboutMe": "The most charming in the hub. Loves coding on codepen.io, making short films, drawing cartoon sketches, and watching Will Smith on big screen. ",
+        "image": {
+            "medium": "images/team/medium/nikhil-krishnan.png",
+            "large": "images/team/large/nikhil-krishnan.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },    
+    {
+        "id": 8,
+        "name": "Nijoe Varkey",
+        "desigination": "Quality analyst",
+        "aboutMe": "The keen onlooker who is tremendously gifted to pluck out the patches. Recently upgraded to the hot hatchback,  Honda Jazz. A family man. ",
+        "image": {
+            "medium": "images/team/medium/nikhil-krishnan.png",
+            "large": "images/team/large/nikhil-krishnan.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Athira Sudharsan",
+        "desigination": "Marketing",
+        "aboutMe": "----",
+        "image": {
+            "medium": "images/team/medium/simon-roger.png",
+            "large": "images/team/large/simon-roger.png"
+        },
+        "socialMedia": {
+            "behance": "link",
+            "dribbble": "link",
+            "linkedin": "link",
+            "twitter": "link"
+        }
+    } 
+     
+]

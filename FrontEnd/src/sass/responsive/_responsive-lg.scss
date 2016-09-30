@@ -1,0 +1,174 @@
+@media (min-width: $screen-lg-min) { 
+     //height variable
+    //===================
+    $height-lg-1 : ($layout-lg - $grid-gutter)/4*1;
+    $height-lg-2 : ($layout-lg - $grid-gutter)/4*2;
+    $height-lg-3 : ($layout-lg - $grid-gutter)/4*3;
+    $height-lg-4 : ($layout-lg - $grid-gutter)/4*4;
+    
+    
+    // main-header common
+    //===================
+    .main-header{
+        .main-logo{
+            left:50%;
+            margin-left:-$height-lg-4/2;
+        }
+        .nav-btn{
+            left:50%;
+            margin-left:($height-lg-4/2)- 26
+        }
+    }
+    .banner{
+        .layout-container{
+            margin-bottom:6vh;
+        }
+    }
+    //home-main-panel
+    //==================
+    .home-main-panel{
+        padding:50px 0;
+    }
+    //uxdots-download-stuff
+    //==================
+    .uxdots-download-stuff{
+        padding:115px;
+    }
+    //=================
+    //end home
+    
+    .project-showing{
+        padding:100px 50px;
+    }
+    //work
+    //===============
+    .work-block-list.ng-enter-active{
+        height:$height-lg-3 !important; // (1014/4)*3
+    }
+    .work-block-grid {
+        $item : 1;
+        @for $i from 1 through 24 {
+            @for $child from 1 through 4 {
+                &.item-#{$item}{
+                    left:$height-lg-1 * ($child - 1); 
+                    top:$height-lg-1 * ($i - 1);
+                }
+                $item : $item+1; 
+            }
+        }
+    }
+    @for $i from 1 through 6 {
+        .work-block-switch.row-#{$i}{
+            height:$height-lg-1 * $i ;
+        }
+    }
+    
+     //casestudy master image panel
+    //============================
+    .case-master-image{
+        figure{
+            //height:$height-lg-2;
+        }
+        .case-master-logo{
+            width:$height-lg-1;
+            height:$height-lg-1;
+        }
+    }
+ 
+    .case-project-dec, .case-project-spec{
+        padding:90px;
+    }
+    
+    
+    .mail-us-panel{
+        .layout-container{
+            padding:120px 15px 140px;
+            h2{
+                font-size:28px;
+                margin-bottom:22px;
+            }
+        }
+    }
+    .image-front, .image-front ul{
+        width:$layout-lg;
+    }
+    
+    .img-approach-frontend{
+        .layout-container{
+            padding:0 3px;
+        }
+    }
+    //contact
+    //=======
+    .contact-header{
+        height:90px;
+        .main-logo{
+            margin-top:23px;
+            font-size:30px;
+        }
+        .close-enquiry{
+            margin-top:36px;
+        }
+    }
+    footer{
+        padding:70px 0 50px;
+        blockquote span{
+            margin-bottom:60px;
+        }
+    }
+   
+    //height set
+    //==========
+    .block-wrap .block, 
+    .block-wrap .prev-next-wrap, 
+    .meet-our-client li, 
+    .ui-used-fonts, .ui-used-icons{
+        height:$height-lg-1; // (1014/4)*1
+    }
+    .stripe{
+        width:$height-lg-1;
+        height:$height-lg-1; 
+    }
+    
+    // aboutpage team popup
+    //=====================
+    $windowWidth: 50vw;
+    .profile{
+        width:$height-lg-4;
+        left: calc(#{$windowWidth} - #{$height-lg-2}); 
+    }
+    
+    //height set
+    .work-with-us-panel, 
+    .stripe-wrap, 
+    .uxdots-download-stuff, 
+    /*.inner-banner, .banner-wrap-inner,*/
+    .work-dec-panel, 
+    .meet-our-client,
+    .content-half-block{
+        height:$height-lg-2; // (1014/4)*2
+    }
+    .work-block-list{
+        height:$height-lg-3; // (1014/4)*3
+    }
+
+//end
+}
+
+@media (min-width: 1400px) {
+    //testimonials
+    //==================
+    .testimonial-panel{
+        padding:90px 0;
+    }
+    .testimonial{
+        margin-top:90px;
+    }
+    .owl-testimonial{
+        .owl-pagination{
+            top:5px;
+        }
+    }
+//end
+}
+ 

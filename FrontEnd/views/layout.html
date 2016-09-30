@@ -1,0 +1,26 @@
+     
+    <!--contact start-->
+    <div ng-if="contactShow" ng-include=" 'views/contact.html' " ng-controller="contactCtrl" class="contact-popup angular-animate"></div>
+    <!--contact end-->
+    
+    <!--header start-->
+    <header ui-view="header"></header> 
+    <!--header End-->
+                        
+    <!--banner start-->                                                       
+    <section class="banner-wrap" ng-class="bannerWrapHome ? 'banner-wrap-home' : 'banner-wrap-inner'">  
+         <div ui-view="bannerHome" class="banner-view-home angular-animate" ng-if="stateChangeInnerHome"></div>
+         <div ui-view="bannerInner" class="banner-view-inner layout-container angular-animate" ng-if="!stateChangeInnerHome"></div>
+    </section>
+    <!--banner end--> 
+    
+    <!--content area start-->
+    <section class="content-area-wrap layout-wrapper">
+        <div ui-view="content" class="content-area angular-animate"></div>
+    </section> 
+    <!--content area End-->
+    
+    <!-- Footer -->
+    <footer ui-view="footer"></footer>
+    <!-- End Footer -->
+     

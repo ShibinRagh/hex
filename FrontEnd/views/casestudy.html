@@ -1,59 +1,125 @@
 <!--start casestudy-panel web-->
-<section class="casestudy-panel layout-wrapper casestudy-web content-wrapper" ng-show="casestudy.casestudyData.type == 'Web App' ">
+<section class="casestudy-panel layout-wrapper casestudy-web content-wrapper" ng-show="casestudy.casestudyData.typeWeb">
     <div class="layout-container">
         <!--start casestudy-master-image-->
-        <div class="case-master-image">
+        <div class="case-master-image" ng-if="desktopScreen">
             <div class="case-master-logo">
-                 <img ng-src="{{casestudy.casestudyData.image.imageLogoColor}}" alt="" class="img-middle">
+                 <img ng-src="{{casestudy.casestudyData.image.imageLogoColor}}" alt="UXDOTS project" class="img-middle">
             </div>
             <figure>
-                <img ng-src="{{casestudy.casestudyData.image.imageCasestudyTop}}" alt="">
+                <img ng-src="{{casestudy.casestudyData.image.imageCasestudyTop}}" alt="UXDOTS project">
             </figure>
         </div>
-        <!--end casestudy-master-image-->
-        <div class="case-abt-project layout-wrapper">
-            <aside class="case-project-dec layout-sm-7 ">
-                <h2 style="color:{{casestudy.casestudyData.primaryColor}}">{{casestudy.casestudyData.name}}</h2>
-                <p>{{casestudy.casestudyData.description}}</p>
-            </aside>
-            <aside class="case-project-spec layout-sm-5">
-                <h3 style="color:{{casestudy.casestudyData.primaryColor}}">PROJECT SECTOR</h3>
-                <p>{{casestudy.casestudyData.projectSector}}</p>
-                
-                <h3 style="color:{{casestudy.casestudyData.primaryColor}}">Project Requirment</h3>
-                <p>{{casestudy.casestudyData.projectRequirment}}</p>
-                
-                <h3 style="color:{{casestudy.casestudyData.primaryColor}}">CLIENT</h3>
-                <p>{{casestudy.casestudyData.client}}</p>
-                
-                <a href="//{{casestudy.casestudyData.website}}" target="_blank"> <i class="icon-link"></i>{{casestudy.casestudyData.website}}</a>
-            </aside>
-        </div>
-    </div>
-
-    <!--start case-ux-panel-->
-    <div class="layout-container case-ux-panel">
-        <div class="block-wrap layout-wrapper">
-            <div class="layout-sm-6">
-                <div class="block go-arrow layout-xs-6 hide-mobile">
-                    <div class="item-center">
-                        <i class="icon-down-arrow-metro"></i>
-                    </div>
-                </div>
+        <div class="case-master-image" ng-if="mobileScreen">
+            <div class="case-master-logo" ng-style="{background:casestudy.casestudyData.primaryColor}">
+                 <img ng-src="{{casestudy.casestudyData.image.imageLogoWhite}}" alt="UXDOTS project" class="img-middle">
             </div>
         </div>
         
+        
+        <!--end casestudy-master-image-->
+        <div class="case-abt-project layout-wrapper">
+            <aside class="case-project-dec layout-sm-7 ">
+                <h2 ng-style="{color:casestudy.casestudyData.primaryColor}">{{casestudy.casestudyData.name}}</h2>
+                <p>{{casestudy.casestudyData.description}}</p>
+            </aside>
+            <aside class="case-project-spec layout-sm-5">
+                <h3 ng-style="{color:casestudy.casestudyData.primaryColor}">BUSINESS TYPE</h3>
+                <p>{{casestudy.casestudyData.projectSector}}</p>
+                
+                <h3 ng-style="{color:casestudy.casestudyData.primaryColor}">PROJECT REQUIRMENT</h3>
+                <p>{{casestudy.casestudyData.projectRequirment}}</p>
+                
+                <h3 ng-style="{color:casestudy.casestudyData.primaryColor}">CLIENT</h3>
+                <p>{{casestudy.casestudyData.client}}</p>
+                
+                <a href="//{{casestudy.casestudyData.website}}" ng-if="casestudy.casestudyData.website" target="_blank"> <i class="icon-link"></i>{{casestudy.casestudyData.website}}</a>
+            </aside>
+        </div>
+        
+        <!--case project steps start-->
+        <div class="block-wrap layout-wrapper case-project-steps">
+            <div class="block layout-xs-6 layout-sm-3">
+                <div class="item-center">
+                    <img alt="UXDOTS project prototyping" src="images/block-icons/ico-prototyping.png">
+                    <span class="block-text">USER EXPERIENCE</span>
+                </div>
+            </div>
+            <div class="block layout-xs-6 layout-sm-3">
+                <div class="item-center">
+                    <img alt="UXDOTS project illustration" src="images/block-icons/ico-illustration.png">
+                    <span class="block-text">USER INTERFACE</span>
+                </div>
+            </div>
+            <div class="block layout-xs-6 layout-sm-3">
+                <div class="item-center">
+                    <img alt="" src="images/block-icons/ico-coding.png">
+                    <span class="block-text">FRONT-END DEVELOP.</span>
+                </div>
+            </div>
+            <div class="block layout-xs-6 layout-sm-3">
+                <div class="item-center">
+                    <img alt="UXDOTS project quality assurance" src="images/block-icons/ico-qa-assurance.png"> 
+                    <span class="block-text">QUALITY ANALYSIS</span>
+                </div>
+            </div>
+        </div>
+        <!--case project steps end-->
+    </div>
+    
+    <!--project-showing start-->
+    <div class="project-showing" ng-style="{background:casestudy.casestudyData.primaryColor}" 
+        screen-dir ng-class="{'project-showing-visible' : scrollClass}">
+        <figure>
+            <img ng-src="{{casestudy.casestudyData.screens.mobile}}" alt="UXDOTS project screen mobile" class="screen-mobile" >
+            <img ng-if="desktopScreen" ng-src="{{casestudy.casestudyData.screens.desktop}}" alt="UXDOTS project screen desktop" class="screen-desktop"> 
+        </figure>
+    </div>
+    <!--project-showing end-->
+    
+    
+    <!--start case-ux-panel-->
+    <div class="layout-container case-ux-panel">
         <!-- start case-ux-content-wrap -->
         <div class="case-ux-content-wrap block-wrap layout-wrapper">
             <div class="layout-sm-6">
                 <div class="content-half-block case-content-block"> 
                     <h3 class="title">UX PROTOTYPING</h3>
-                    <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
-                    <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems. Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
+                    <h4>We bring out a new era cornerstoning supremeness.</h4>
+                    <p>User experience is the key to the success of every product. It is the way a product works and the way it’s going to be explored by the users. And there you meet our proficient UX architects and developers who graft out from the scratch.</p>
                 </div>
             </div>
-            <div class="layout-sm-6">
-                <div class="stripe white">
+            <div class="layout-sm-6 block-wrap">
+                <div class="block hide-mobile"></div>
+                <div class="layout-wrapper layout-xs-12">
+                    <div class="block go-arrow layout-xs-6">
+                        <div class="item-center"> 
+                            <i class="icon-right-arrow-metro"></i> 
+                            <span>STRATEGY</span>
+                        </div>
+                    </div>
+                    <div class="block communication layout-xs-6">
+                        <div class="item-center">
+                            <img src="images/block-icons/ico-communication.png" alt="UXDOTS project communication">
+                            <span class="block-text">COMMUNICATION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block wireframe layout-xs-6 layout-sm-3 pull-right-sm">
+                <div class="item-center">
+                    <img src="images/block-icons/ico-wireframe.png" alt="UXDOTS project wireframe">
+                    <span class="block-text">Wireframe</span>
+                </div>
+            </div>
+            <div class="layout-wrapper block-wrap">
+                <div class="block sketch layout-xs-6 layout-sm-3 pull-right-sm">
+                    <div class="item-center">
+                        <img src="images/block-icons/ico-sketch.png" alt="UXDOTS project sketch">
+                        <span class="block-text">Sketch</span>
+                    </div>
+                </div>
+               <div class="stripe white pull-right-sm">    
                     <div class="deg right">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -65,39 +131,34 @@
                         <span class="line"></span>
                         <span class="line"></span>
                         <span class="line"></span>
-                    </div>
-                </div>
-                <div class="block-wrap layout-wrapper layout-xs-12">
-                    <div class="block sketch layout-xs-6">
-                        <div class="item-center">
-                            <img src="images/block-icons/ico-sketch.png" alt="">
-                            <span class="block-text">Sketch</span>
-                        </div>
-                    </div>
-                    <div class="block wireframe layout-xs-6">
-                        <div class="item-center">
-                            <img src="images/block-icons/ico-wireframe.png" alt="">
-                            <span class="block-text">Wireframe</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end case-ux-content-wrap-->
-        <!--start case-ux-image-->
-        <div class="case-ux-image layout-wrapper hide-mobile" style="background:{{casestudy.casestudyData.primaryColor}}">
-            <figure>
-                <img ng-src="{{casestudy.casestudyData.image.imageUX}}" alt=""> 
-            </figure>
-        </div>
-        <!--end uxcase-ux-panel-->
     </div>
     <!--end case-panel-->
-    
+        
+    <!--start case-ux-image-->
+    <div class="case-ux-image layout-wrapper hide-mobile" ng-style="{background:casestudy.casestudyData.customColor}">
+        <figure>
+            <img ng-src="{{casestudy.casestudyData.image.imageUX}}" alt="UXDOTS project UX image">
+        </figure>
+    </div>
+    <!--end uxcase-ux-panel-->
+   
+        
     <!--start case-ui-panel layout-container-->
     <div class="case-ui-panel layout-container">
         <div class="block-wrap layout-wrapper">
-            <div class="pull-right layout-sm-6 f-none-mobile">
+            <div class="layout-sm-6">
+                <div class="content-half-block case-content-block "> 
+                        <h3 class="title">USER INTERFACE</h3>
+                        <h4>Impression is conceived when depiction goes extreme.</h4>
+                        <p>Once you’re hit you want to impress the person with the vicinity you could showcase, and there you need an incredible face that portrays the pioneering stand and authenticity of a your product. The user interface is, in fact, a story telling.</p>
+                </div>
+            </div>
+            <div class="layout-sm-6 block-wrap">
                 <div class="stripe white">
                     <div class="deg right">
                         <span class="line"></span>
@@ -112,91 +173,106 @@
                         <span class="line"></span>
                     </div>
                 </div>
-                <div class="block go-arrow layout-xs-6 hide-mobile">
-                    <div class="item-center">
-                        <i class="icon-down-arrow-metro"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--start case-ui-content-wrap-->
-        <div class="case-ui-content-wrap">
-            <div class="layout-wrapper">
-                <div class="layout-sm-6 layout-wrapper"> 
-                <div class="content-half-block case-content-block hidden-sm"> 
-                    <h3 class="title">USER INTERFACE</h3>
-                    <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
-                    <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems. Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
-                </div>
-                    <div class="layout-xs-12 layout-sm-6 pull-right f-none-mobile  ui-used-icons">
-                        <h3 class="title">ICON DESIGN</h3>
-                        <div class="icons-wrap">
-                            <img ng-src="{{icon}}" alt="" ng-repeat="icon in casestudy.casestudyData.icons">
-                        </div>
-                    </div>
+                <div class="block hide-mobile"></div>
                     <div class="layout-xs-12 ui-used-fonts">
                         <h3 class="title">FONTS USED</h3>
                         <h6>Primary font</h6>
-                        <img ng-src="{{casestudy.casestudyData.fonts.primaryFont}}" alt="">
+                        <img ng-src="{{casestudy.casestudyData.fonts.primaryFont}}" alt="UXDOTS project fonts">
                         <span class="gap"></span>
-                        <h6>Secondary font</h6>
-                        <img ng-show="casestudy.casestudyData.fonts.secondaryFont" ng-src="{{casestudy.casestudyData.fonts.secondaryFont}}" alt="">
-                        <span ng-show="!casestudy.casestudyData.fonts.secondaryFont">No secondary font</span>
-                    </div>
-                </div>
-                <div class="layout-sm-6 hide-mobile">
-                <div class="content-half-block case-content-block"> 
-                    <h3 class="title">USER INTERFACE</h3>
-                    <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
-                    <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems. Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
-                </div>
-                </div>
-            </div>
-            <div class="block-wrap layout-wrapper">
-                <div class="block project-color  layout-sm-3" style="background:{{casestudy.casestudyData.primaryColor}}">
-                    <div class="color-name">#primary-color</div>
-                    <div class="color-code">{{casestudy.casestudyData.primaryColor}}</div>
-                </div>
-                <div class="block project-color layout-sm-3" style="background:{{casestudy.casestudyData.secondaryColor}}">
-                    <div class="color-name">#secondary-color</div>
-                    <div class="color-code">{{casestudy.casestudyData.secondaryColor}}</div>
-                </div>
-                <div class="block go-arrow go-arrow-grey layout-sm-3">
-                    <div class="item-center"> 
-                        <i class="icon-down-arrow-metro"></i>
-                        <span>USED TOOLS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="block-wrap layout-wrapper used-tools">
-                    <div class="block pull-right-sm layout-xs-6 layout-sm-3" ng-repeat="uiTool in casestudy.casestudyData.uiTools | orderBy: '-' ">
-                        <div class="item-center">
-                            <img alt="" ng-src="{{uiTool.uiToolImage}}">
-                            <span class="block-text">{{uiTool.uiToolName}}</span>
-                        </div>
+                        <h6 ng-show="casestudy.casestudyData.fonts.secondaryFont">Secondary font</h6>
+                        <img class="secondary-font" ng-show="casestudy.casestudyData.fonts.secondaryFont" ng-src="{{casestudy.casestudyData.fonts.secondaryFont}}" alt="">
                     </div>
             </div>
-        </div> 
-        <!--end case-ui-content-wrap-->
-        <div class="layout-wrapper project-design">
-            <figure>
-                <img ng-src="{{casestudy.casestudyData.image.imageDesign}}" alt="">
-            </figure>
+        </div>
+        <div class="block-wrap layout-wrapper">
+            <div class="block project-color  layout-sm-3" ng-style="{background:casestudy.casestudyData.primaryColor}">
+                <div class="color-name">#primary-color</div>
+                <div class="color-code">{{casestudy.casestudyData.primaryColor}}</div>
+            </div>
+            <div class="block project-color layout-sm-3" ng-style="{background:casestudy.casestudyData.secondaryColor}">
+                <div class="color-name">#secondary-color</div>
+                <div class="color-code">{{casestudy.casestudyData.secondaryColor}}</div>
+            </div>
+            <div class="f-none-mobile layout-sm-3  ui-used-icons">
+                <h3 class="title">ICON DESIGN</h3>
+                <div class="icons-wrap">
+                    <img ng-src="{{icon}}" alt="UXDOTS project icons" ng-repeat="icon in casestudy.casestudyData.icons">
+                </div>
+            </div>
+            <div class="block go-arrow layout-sm-3">
+                <div class="item-center"> 
+                    <i class="icon-down-arrow-metro"></i>
+                    <span>USED TOOLS</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block-wrap layout-wrapper used-tools">
+        <div class="block pull-right-sm layout-xs-6 layout-sm-3" 
+                        ng-repeat="uiTool in casestudy.casestudyData.uiTools">
+            <div class="item-center">
+                <img alt="" ng-src="{{uiTool.uiToolImage}}">
+                <span class="block-text">{{uiTool.uiToolName}}</span>
+            </div>
+        </div>
         </div>
     </div>
     <!--end case-ui-panel layout-container-->
+     
+ 
+    
+    <!--about page process start-->
+        <div class="aboutpage-process working-panel layout-wrapper" ng-if="desktopScreen">
+            <div class="about-process plan layout-sm-3">
+                <span class="bg-aboutpage-process"></span>
+                <figure>
+                    <img src="images/toobler/05.jpg" alt="UXDOTS project">
+                </figure>
+            </div>
+            <div class="about-process create layout-sm-3">
+                <span class="bg-aboutpage-process"></span>
+                <figure>
+                    <img src="images/toobler/12.jpg" alt="UXDOTS project">
+                </figure>
+            </div>
+            <div class="about-process analyze layout-sm-3">
+                <span class="bg-aboutpage-process"></span>
+                <figure>
+                    <img src="images/toobler/03.jpg" alt="UXDOTS project">
+                </figure>
+            </div>
+            <div class="about-process result layout-sm-3">
+                <span class="bg-aboutpage-process"></span>
+                <figure>
+                    <img src="images/toobler/04.jpg" alt="UXDOTS project">
+                </figure>
+            </div>
+        </div>
+    <!--about page process end-->
+    
+    <!--end working-panel-->         
     
     <!--start case-frontend-panel-->
     <div class="case-frontend-panel layout-wrapper">
         <div class="layout-container"> 
-            <div class="block-wrap layout-wrapper">
+            <!--start frontend-content-->
+            <div class="layout-wrapper case-ux-content-wrap">
                 <div class="layout-sm-6">
-                    <div class="block go-arrow layout-sm-6 hide-mobile">
+                <div class="content-half-block case-content-block"> 
+                    <h3 class="title">FRONT-END DEVELOPMENT</h3>
+                    <h4>The Kingdom of web visual and interaction blends.</h4>
+                    <p>Requiring a procession of explanatory skills in bringing out the good looking user interface to its working phase, you owe to in-house incredible heads having exceptional front-end engineering knowhow in navigating users.</p>
+                </div>
+                </div>
+                <div class="layout-sm-6 block-wrap">
+                   <div class="block hidden hide-mobile"></div>
+                   <div class="block go-arrow layout-sm-6">
                         <div class="item-center">
                             <i class="icon-down-arrow-metro"></i>
-                        </div>
+                            <span>USED TOOLS</span>
+                       </div>
                     </div>
-                    <div class="stripe white">
+                    <div class="stripe white"> 
                         <div class="deg right">
                             <span class="line"></span>
                             <span class="line"></span>
@@ -212,29 +288,10 @@
                     </div>
                 </div>
             </div>
-            <!--start frontend-content-->
-            <div class="layout-wrapper case-ux-content-wrap">
-                <div class="layout-sm-6">
-                <div class="content-half-block case-content-block"> 
-                    <h3 class="title">FRONT-END DEVELOPMENT</h3>
-                    <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
-                    <p>Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems. Bound by a passion for pragmatic problem-solving, we want to find simple solutions to complicated problems.</p>
-                </div>
-                </div>
-                <div class="layout-sm-6 block-wrap">
-                   <div class="block hidden hide-mobile"></div>
-                   <div class="block go-arrow go-arrow-grey layout-sm-6">
-                        <div class="item-center">
-                            <i class="icon-down-arrow-metro"></i>
-                            <span>USED TOOLS</span>
-                       </div>
-                    </div>
-                </div>
-            </div>
             <!--end frontend-content-->
             <div class="layout-wrapper">
                 <div class="block-wrap used-tools">
-                    <div class="layout-sm-3 block pull-right-sm layout-xs-6" ng-repeat="frondendTool in casestudy.casestudyData.frontendTools | orderBy: '-' ">
+                    <div class="layout-sm-3 block pull-right-sm layout-xs-6" ng-repeat="frondendTool in casestudy.casestudyData.frontendTools">
                         <div class="item-center">
                             <img ng-src="{{frondendTool.frontendToolImage}}" alt="">
                             <span class="block-text">{{frondendTool.frontendToolName}}</span>
@@ -246,75 +303,55 @@
     </div>
     <!--end case-frontend-panel-->
     
-    <!--start complete-site-->
-    <div class="complete-site {{screenActive}}"  screen-dir>
-        <div class="screen-img-wrap">
-            <img ng-src="{{casestudy.casestudyData.screens.mobile}}" alt="" class="screen-mobile angular-animate" >
-            <img ng-src="{{casestudy.casestudyData.screens.tab}}" alt="" class="screen-tab angular-animate">
-            <img ng-src="{{casestudy.casestudyData.screens.desktop}}" alt="" class="screen-desktop angular-animate"> 
-               <span class="show-fullsite layout-container">
-                   <i class="icon-mobile" style="color:{{casestudy.mobC}}" ng-click="screenActive='screen-active-mobile'; casestudy.currentScreen('mobC')"></i> 
-                   <i class="icon-tab" style="color:{{casestudy.tabC}}" ng-click="screenActive='screen-active-tab'; casestudy.currentScreen('tabC')"></i>
-                   <i class="icon-desktop" style="color:{{casestudy.desktopC}}" ng-click="screenActive='screen-active-desktop'; casestudy.currentScreen('desktopC')"></i> 
-               </span>
-        </div> 
-        <div class="layout-container">
-            <div class="layout-sm-6">
-               <div class="content-half-block case-content-block">
-               <h4 style="color:{{casestudy.casestudyData.primaryColor}}">A Beautiful Website Solution Designed to Engage Audiences Worldwide.</h4>  
-               <p>As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software development.</p>
-               </div>
-            </div>
-        </div>
-    </div>
-    <!--end complete-site-->
+ 
     
     <!--start case-testimonial-panel-->
-    <div class="case-testimonial-panel">
+    <div class="case-testimonial-panel" ng-if="casestudy.casestudyData.testimonial">
         <div class="layout-container">
             <blockquote class="layout-sm-7">
                 <p>" {{casestudy.casestudyData.testimonial}} "</p>
-                <h5 class="hide-mobile" style="color:{{casestudy.casestudyData.primaryColor}}">{{casestudy.casestudyData.client}} <span>{{casestudy.casestudyData.clientProfession}}</span></h5>
+                <h5 class="hide-mobile" ng-style="{color:casestudy.casestudyData.primaryColor}">{{casestudy.casestudyData.client}} <span>{{casestudy.casestudyData.clientProfession}}</span></h5>
             </blockquote>
             <div class="layout-sm-5">
                 <figure>
-                    <span><img ng-src="{{casestudy.casestudyData.clientImage}}" alt=""></span>
+                    <span><img ng-src="{{casestudy.casestudyData.clientImage}}" alt="UXDOTS project client"></span>
                 </figure>
             </div>
-            <h5 class="hidden-sm" style="color:{{casestudy.casestudyData.primaryColor}}">{{casestudy.casestudyData.client}} <span>{{casestudy.casestudyData.clientProfession}}</span></h5>
+            <h5 class="hidden-sm" ng-style="{color:casestudy.casestudyData.primaryColor}">{{casestudy.casestudyData.client}} <span>{{casestudy.casestudyData.clientProfession}}</span></h5>
         </div>
     </div>
     <!--end case-testimonial-panel-->
-    
-    <!--start case-all-projects-->
-    <ul class="case-all-projects">
-        <li style="background:{{logo.primaryColor}}" ng-repeat="logo in casestudy.casestudy">
-            <img ng-src="{{logo.image.imageLogoWhite}}" alt="" class="img-middle"> 
-        </li>
-    </ul>
-    <!--end case-all-projects-->
-    
-
 </section>
 <!--end casestudy-panel web-->
 <!--start casestudy-panel mobile-->
-<section class="casestudy-panel layout-wrapper casestudy-mobile" ng-show="casestudy.casestudyData.type == 'Mobile App' ">
+<section class="casestudy-panel layout-wrapper casestudy-mobile" ng-show="casestudy.casestudyData.typeMobile">
     <div class="layout-container">
-        <img ng-src="{{casestudy.casestudyData.image.presentation}}" alt="">
+        <img ng-src="{{casestudy.casestudyData.image.presentation}}" alt="UXDOTS project presentation">
     </div>
 </section>
 <!--end casestudy-panel mobile-->
 
+<!--start case-all-projects-->
+<div class="case-all-projects" ng-controller="projectLogoCtrl as logos" ng-if="desktopScreen">
+  <a href="#/casestudy/{{logo.name}}" ng-repeat="logo in casestudy.casestudy" ng-repeat-owl-carousel carousel-init="logos.carouselInitializer" 
+  ng-style="{background:logo.primaryColor}" class="img-middle-wrap block"> 
+            <img ng-src="{{logo.image.imageLogoWhite}}" alt="UXDOTS all project" class=""> 
+    </a>
+</div>
+<!--end case-all-projects-->
+    
+    
 <!--start mail-us-panel-->
-<div class="mail-us-panel" ng-class="{'mail-us-panel-show' : mailUsPanelShow }">
+<div class="mail-us-panel">
     <div class="layout-container">
-        <div class="next-project" ng-click="casestudy.caseNext()"><span>Next Project</span></div>
         <h2>WANT TO WORK WITH US</h2>
-        <form action="">
+        <form name="enquiryForm">
             <div class="mail-us">
-                <input type="text" placeholder="Please enter your email id">
-                <button>ENQUIRE</button>
+                <input type="email" name="email" ng-model="enquireData.email" placeholder="Please enter your email id" required>
+                <button   type="submit" ng-click="enquire(enquireData.email); sent=true" ng-disabled="enquiryForm.email.$invalid">ENQUIRE <span ng-show="sent" class="spin"></span> </button>
             </div>
+            <span ng-show="emailSent" class="success-msg">Your message has been sent, we will contact you soon.</span>
+            <span ng-show="emailSentFailure" class="failure-msg">Oops, your message did not send</span>
         </form>
     </div>
 </div>
